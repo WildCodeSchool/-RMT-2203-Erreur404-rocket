@@ -1,8 +1,10 @@
 /* RESET */
 
 * {
+  background-color: var(--BackgroundColor);
   margin: 0px;
   padding: 0px;
+
 }
 
 :root {
@@ -39,19 +41,4 @@ li,
 a {
   list-style-type: none;
   text-decoration: none;
-}
-
-/* VARIABLES GLOBALES */
-* {
-  background-color: var(--BackgroundColor);
-}
-
-.colortest {
-  color: var(--MainColor);
-}
-.colortest1 {
-  color: var(--color2);
-}
-.colortest2 {
-  color: var(--color3);
 }
