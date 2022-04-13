@@ -1,7 +1,11 @@
 import React from "react";
 
 const pokemonDescritpion = () => {
-  return <div />;
+  return (
+    <div>
+      <h1>Pokemon description</h1>
+    </div>
+  );
 };
 
 export default pokemonDescritpion;

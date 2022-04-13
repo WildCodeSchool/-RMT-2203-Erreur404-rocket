@@ -6,16 +6,16 @@
 }
 
 :root {
-  --title-font: 'Reem Kufi', sans-serif;
+  --title-font: "Reem Kufi", sans-serif;
   --title-size: 48px;
-  --text-font: 'Overpass', sans-serif;
+  --text-font: "Overpass", sans-serif;
   --text-size: 16px;
   --main-line-lenght: 25ch;
   line-height: 1.5;
   box-sizing: border-box;
   letter-spacing: 0.1rem;
 
---BackgroundColor: #0f1b1e;
+  --BackgroundColor: #0f1b1e;
   --MainColor: #3e3d7b;
   --color2: #a21a10;
   --color3: #f7f7ff;
@@ -42,3 +42,16 @@ a {
 }
 
 /* VARIABLES GLOBALES */
+* {
+  background-color: var(--BackgroundColor);
+}
+
+.colortest {
+  color: var(--MainColor);
+}
+.colortest1 {
+  color: var(--color2);
+}
+.colortest2 {
+  color: var(--color3);
+}
