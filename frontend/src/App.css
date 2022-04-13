@@ -1,56 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* RESET */
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+:root {
+  --title-font: 'Reem Kufi', sans-serif;
+  --title-size: 48px;
+  --text-font: 'Overpass', sans-serif;
+  --text-size: 16px;
+  --main-line-lenght: 25ch;
+  line-height: 1.5;
+  box-sizing: border-box;
+  letter-spacing: 0.1rem;
+
+--BackgroundColor: #0f1b1e;
+  --MainColor: #3e3d7b;
+  --color2: #a21a10;
+  --color3: #f7f7ff;
+  --border-radius: 18px;
+  --box-shadow: 0 3px 7px var(--MainColor);
 }
 
-.App {
-  text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--title-font);
+  font-weight: 500; /* ou 700 en bold */
+}
+p {
+  font-family: var(--text-font);
+  font-weight: 500; /* 700 possible en bold */
+}
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
-}
+/* VARIABLES GLOBALES */
