@@ -1,6 +1,6 @@
 import React from "react";
 
-const pokemonDescritpion = () => {
+const pokemonDescription = () => {
   return (
     <div>
       <h1>Pokemon description</h1>
@@ -8,4 +8,4 @@ const pokemonDescritpion = () => {
   );
 };
 
-export default pokemonDescritpion;
+export default pokemonDescription;
