@@ -1,10 +1,8 @@
 /* RESET */
 
 * {
-  background-color: var(--BackgroundColor);
   margin: 0px;
   padding: 0px;
-
 }
 
 :root {
