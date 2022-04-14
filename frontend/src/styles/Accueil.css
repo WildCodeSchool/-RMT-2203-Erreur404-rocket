@@ -1,0 +1,157 @@
+/* RESET */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --title-font: "Reem Kufi", sans-serif;
+  --title-size: 48px;
+  --text-font: "Overpass", sans-serif;
+  --text-size: 16px;
+  --main-line-lenght: 25ch;
+  line-height: 1.5;
+  box-sizing: border-box;
+  letter-spacing: 0.1rem;
+
+  --BackgroundColor: #0f1b1e;
+  --MainColor: #3e3d7b;
+  --color2: #a21a10;
+  --color3: #f7f7ff;
+  --border-radius: 18px;
+  --box-shadow: 0 3px 7px var(--MainColor);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--title-font);
+  font-weight: 500; /* ou 700 en bold */
+}
+h1 {
+  color: var(--color2);
+}
+p {
+  font-family: var(--text-font);
+  font-weight: 500; /* 700 possible en bold */
+}
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* VARIABLES GLOBALES */
+
+* {
+  background-color: var(--BackgroundColor);
+}
+
+.colortest {
+  color: var(--MainColor);
+}
+.colortest1 {
+  color: var(--color2);
+}
+.colortest2 {
+  color: var(--color3);
+}
+
+/* DEBUT PAGE ACCUIEL */
+
+.maincontainer {
+  width: 100vw;
+  height: 100vh;
+}
+p {
+  color: var(--color3);
+  text-align: center;
+  margin: 2rem 0 2rem 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0 2rem 1rem;
+  font-size: var(--title-size);
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding-bottom: 80px;
+}
+
+.rejoins-nous {
+  width: 30%;
+  height: 400px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+.giovanni {
+  width: 200px;
+}
+
+.Lacasse {
+  width: 30%;
+  height: 400px;
+}
+
+.section3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding-top: 100px;
+}
+
+.jessie {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 100%;
+}
+
+.miaouss {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 100%;
+}
+
+.james {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .section1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .p,
+  h1 {
+    text-size-adjust: 0, 8rem;
+  }
+
+  .giovanni,
+  .james,
+  .jessie,
+  .miaouss,
+  .rocketball {
+    width: 30%;
+  }
+}
