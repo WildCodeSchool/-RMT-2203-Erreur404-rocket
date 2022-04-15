@@ -20,7 +20,7 @@
   --color2: #a21a10;
   --color3: #f7f7ff;
   --border-radius: 18px;
-  --box-shadow: 0 3px 7px var(--MainColor);
+  --box-shadow:var(--color3) 0px 1px 4px;
 }
 
 h1,
@@ -60,123 +60,309 @@ a {
   color: var(--color3);
 }
 
-/* DEBUT PAGE ACCUIEL */
+/* ACCUEIL  DESKTOP MODE */
+
+/* SEPARATEUR RECCURENT */
+.separation {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.separateur{
+  margin: 10rem 2rem;
+  height: 2px;
+  border:none;
+  border-radius: var(--border-radius);
+  width: 20vw;
+  background-color: var(--color2);
+
+  
+}
+.rocketball {
+
+  width: 40px;
+  
+}
+
+/* SEPARATEUR RECCURENT */
+
 
 .maincontainer {
   width: 100vw;
-  height: 100vh;
-}
-p {
-  color: var(--color3);
-  text-align: center;
-  margin: 2rem 0 2rem 1rem;
+  
 }
 
-h1 {
-  text-align: center;
-  margin: 1rem 0 1rem 1rem;
-  font-size: var(--title-size);
+.maincontainer p {
+  font-size: 1.5rem;
 }
 
 .section1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   width: 100vw;
+  
+}
+
+.section1 p {
+  
+  padding: 1rem 1rem;
+  background-color: var(--color3);
+  border-radius:var(--border-radius);
+  box-shadow:var(--box-shadow);
+  color: var(--BackgroundColor);
+  text-align: center;
+  margin: 2rem 0 2rem 1rem;
+}
+
+.section1 h1 {
+  padding: 8rem 1rem;
+  text-align: center;
+  margin: 1rem 0 1rem 1rem;
+  font-size: 4rem;
+  margin-top: -10rem;
+}
+.giovanni-container {
+  display:flex;
+  justify-content: flex-end;
+  width:40%;
+  
+
+  }
+
+.giovanni {
+  width: 75%;
 }
 
 .rejoins-nous {
-  width: 30%;
-  height: 400px;
+
+ display:flex;
+ flex-direction: column;
+ align-items:center;
+  width: 40%;
+  
 }
 
 .section2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100vw;
 }
-.giovanni {
-  width: 150px;
+
+.section2 p {
+  
+  padding: 1rem 1rem;
+  background-color: var(--color3);
+  border-radius:var(--border-radius);
+  box-shadow:var(--box-shadow);
+  color: var(--BackgroundColor);
+  text-align: center;
+  margin: 2rem 0 2rem 1rem;
 }
+
+.section2 h1 {
+  padding: 8rem 1rem;
+  text-align: center;
+  margin: 1rem 0 1rem 1rem;
+  margin-top: -10rem;
+  font-size: 4rem;
+}
+
+
+
 
 .lateam {
-  width: 150px;
-}
-.Lacasse {
-  width: 50%;
-  height: 400px;
+  display:flex;
+  width: 40%;
 }
 
-.section3 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  padding-top: 100px;
+.lachasse {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  width: 40%;
+  
 }
 
-.rocketball {
-  width: 10%;
-  justify-content: center;
+
+
+.description-wrapper {
+  
+  display:flex;
+  text-align:center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items:center;
+  width:100%;
+
 }
 
-.jessie {
-  width: 15vw;
-  height: 15vw;
-  border-radius: 100%;
+
+ .jessie, .miaouss, .james {
+width: 200px;
+height:200px;
+border-radius: 100%;
+
+ 
+  
 }
 
-.miaouss {
-  width: 15vw;
-  height: 15vw;
-  border-radius: 100%;
+.description-wrapper p {
+  background-color: var(--color3);
+  border-radius:var(--border-radius);
+  box-shadow:var(--box-shadow);
+  color: var(--BackgroundColor);
+  text-align: center;
+  color: var(--BackgroundColor);
+  padding: 1rem 1rem;
+  margin-bottom: 2rem;
+}
+.description-jessie , .description-miaouss, .description-james {
+ width: 30%;
+
+
 }
 
-.james {
-  width: 15vw;
-  height: 15vw;
-  border-radius: 100%;
-}
+/* FIN DU ACCUEIL  DESKTOP MODE */
+
+/* ACCUEIL  EN RESPONSIVE */ 
 
 @media screen and (max-width: 767px) {
-  h1 {
-    font-size: 30px;
+
+
+  .separation {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .separateur{
+    margin: 5rem 2rem;
+    height: 2px;
+    border:none;
+    border-radius: var(--border-radius);
+    width: 20vw;
+    background-color: var(--color2);
+  
+    
   }
 
-  .maincontainer {
+  .section1 {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    justify-items: center;
+    align-items: center;
+    
+  }
+  
+  .section1 p {
+    
+    padding: 1rem 1rem;
+    background-color: var(--color3);
+    border-radius:var(--border-radius);
+    box-shadow:var(--box-shadow);
+    color: var(--BackgroundColor);
+    text-align: center;
+    margin: 2rem 0 4rem 1rem;
+  }
+
+  .section1 h1 {
+    padding: 1rem 1rem;
+    text-align: center;
+    margin: 1rem 0 1rem 1rem;
+    font-size: var(--title-size);
   }
 
   .rejoins-nous {
-    padding-left: 100px;
+    width: 70%;
+    
   }
+  .giovanni-container {
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 
-  .section1,
-  .section2,
-  .section3 {
-    display: block;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    text-size-adjust: 0, 8rem;
   }
-  .rocketball {
-    margin-top: 30px;
-    height: 100%;
-    margin-left: 40%;
-  }
-  .james,
-  .jessie,
-  .miaouss,
-  .lateam,
+  
   .giovanni {
     width: 30%;
-    display: block;
-    flex-direction: column;
-    margin-top: 30px;
-    height: 100%;
-    margin-left: 30%;
   }
+
+  .section2 {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  
+  
+  .lateam {
+    width: 30%;
+  }
+  .lachasse {
+    margin-top : 2rem;
+    width: 70%;
+    
+  }
+
+  .section2 h1 {
+    padding: 1rem 1rem;
+    text-align: center;
+    margin: 1rem 0 1rem 1rem;
+    font-size: var(--title-size);
+
+  }
+
+  .section2 p {
+    padding: 1rem 1rem;
+    background-color: var(--color3);
+    border-radius:var(--border-radius);
+    box-shadow:var(--box-shadow);
+    color: var(--BackgroundColor);
+    text-align: center;
+    margin: 2rem 0 4rem 1rem;
+
+  }
+
+  .section3 {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+  }
+  .portrait-wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    width:70%;
+  }
+
+  .jessie , .miaouss, .james {
+    margin: 2rem 0rem;
+    width: 150px;
+    height:150px;
+    
+    
+  }
+  .description-wrapper{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  }
+  .description-jessie , .description-miaouss, .description-james {
+    width: 80%;
+   margin: 2rem 0 ;
+   }
+   .description-jessie p, .description-miaouss p, .description-james p{
+    background-color: var(--BackgroundColor);
+    color: var(--color2);
+    box-shadow: none;
+   }
 }
+/* FIN DU  ACCUEIL  EN RESPONSIVE */ 
+  
