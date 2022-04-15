@@ -1,0 +1,224 @@
+/* RESET */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --title-font: "Reem Kufi", sans-serif;
+  --title-size: 48px;
+  --text-font: "Overpass", sans-serif;
+  --text-size: 16px;
+  --main-line-lenght: 25ch;
+  line-height: 1.5;
+  box-sizing: border-box;
+  letter-spacing: 0.1rem;
+
+  --BackgroundColor: #0f1b1e;
+  --MainColor: #3e3d7b;
+  --color2: #a21a10;
+  --color3: #f7f7ff;
+  --border-radius: 18px;
+  --box-shadow: 0 3px 7px var(--MainColor);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--title-font);
+  font-weight: 500; /* ou 700 en bold */
+}
+p {
+  font-family: var(--text-font);
+  font-weight: 500; /* 700 possible en bold */
+}
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* VARIABLES GLOBALES */
+* {
+  background-color: var(--BackgroundColor);
+}
+
+.colortest {
+  color: var(--MainColor);
+}
+.colortest1 {
+  color: var(--color2);
+}
+.colortest2 {
+  color: var(--color3);
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.divcontact {
+  margin-top: 8%;
+}
+
+.rocketimg {
+  border-radius: var(--border-radius);
+  width: 23%;
+  margin-top: 2%;
+}
+
+.rocketimg:hover {
+  color: #3e3d7b;
+}
+
+.comeus {
+  color: var(--color2);
+  font-size: 3.5rem;
+}
+
+.whyrejoinus {
+  color: var(--color3);
+  font-size: 1.3rem;
+}
+
+.whyrejoinus2 {
+  color: var(--color3);
+  font-size: 1.6rem;
+  margin-top: 2%;
+}
+
+.jjimg {
+  width: 65%;
+  padding-top: 5%;
+}
+
+/* ContactForm JSX */
+
+.row1 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  margin-top: 3%;
+}
+
+.contactus {
+  color: var(--color2);
+  font-size: 4rem;
+}
+
+.adress {
+  color: var(--color3);
+}
+
+.p1 {
+  color: var(--color3);
+}
+
+.p2 {
+  color: var(--color3);
+}
+
+.jassie {
+  width: 25%;
+}
+
+.contacth1 {
+  color: var(--color3);
+}
+
+.pika {
+  width: 25%;
+  height: 50%;
+  margin-top: 32%;
+  margin-right: 5%;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+
+.row2 {
+  margin-left: 10%;
+}
+
+/* Contact Formulaire */
+
+.contactForm {
+  padding: 50px;
+  width: 110%;
+  max-width: 400px;
+  margin: 30px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--color3);
+  margin-top: 25%;
+}
+
+.contactForm:hover {
+  color: var(--color2);
+  transition: 200ms;
+}
+.contactForm input,
+button,
+textarea {
+  height: 50px;
+  padding-left: 5px;
+  font-size: 18px;
+  border-radius: 10px;
+  border-style: hidden;
+}
+
+.contactForm button {
+  background-color: var(--color2);
+}
+
+.contactForm input,
+textarea {
+  background-color: rgb(240, 240, 240);
+}
+.contactForm textarea {
+  height: 110px;
+}
+
+.h1contact {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color3);
+  margin-bottom: 18px;
+}
+
+.formcontact1 {
+  display: flex;
+}
+
+.pokeball {
+  width: 35%;
+  display: flex;
+  margin-left: 18%;
+  margin-top: 10%;
+}
+
+.pokeball:hover {
+  animation: ballEffect 2.5s;
+}
+
+@keyframes ballEffect {
+  100% {
+    transform: rotate(1800deg) translate(0.45px);
+  }
+}
+
+/* Media Query */
+
+@media screen and (max-width: 600px) {
+  .rocketimg {
+    display: none;
+  }
+}
