@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import "./App.css";
+
 import Accueil from "./pages/Accueil";
 import Pokedex from "./pages/Pokedex";
 import PokemonDescription from "./pages/PokemonDescription";

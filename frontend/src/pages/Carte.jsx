@@ -1,5 +1,7 @@
 import React from "react";
+
 import "../styles/Carte.css";
+
 import Mapper from "@components/MapContainer";
 
 function Carte() {

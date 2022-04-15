@@ -1,5 +1,6 @@
 import React from "react";
 import ImageMapper from "react-img-mapper";
+
 import "../styles/Carte.css";
 
 function Mapper() {
