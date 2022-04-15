@@ -15,13 +15,14 @@ function Acceuil() {
         <div className="rejoins-nous">
           <h1>Rejoins-nous!</h1>
           <p>
+            {" "}
             La Team Rocket déclare la guerre!
             <br />
             Afin de rallier le monde à notre cause
             <br />
-            Afin de rendre lavenir diabolique et le présent infernal
+            Afin de rendre l avenir diabolique et le présent infernal
             <br />
-            Afin détendre notre colère jusquà la voie lactée
+            Afin d étendre notre colère jusqu à la voie lactée
             <br />
             Attrapez-les tous ou ce sera la guerre!
           </p>
@@ -31,7 +32,7 @@ function Acceuil() {
       </div>
 
       <div className="section2">
-        <img src={teamRocket1} alt="team-rocket1" />
+        <img className="lateam" src={teamRocket1} alt="team-rocket1" />
 
         <div className="la chasse">
           <h1>Prêt pour la chasse?</h1>
@@ -51,18 +52,12 @@ function Acceuil() {
       </div>
 
       <div className="rocketballi">
-        <img
-          className="rocketball"
-          src={teamRocketball}
-          alt="rocketball"
-          width={100}
-        />
+        <img className="rocketball" src={teamRocketball} alt="rocketball" />
       </div>
 
       <div className="section3">
         <img className="jessie" src={jessieRocket} alt="jessierocket" />
         <img className="miaouss" src={miaoussAlone} alt="miaoussalone" />
-
         <img className="james" src={jamesRocket} alt="jamesrocket" />
       </div>
     </div>
