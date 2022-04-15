@@ -14,7 +14,7 @@ function Acceuil() {
     <div className="maincontainer">
       <div className="section1">
         <div className="rejoins-nous">
-          <h1>Rejoins-nous!</h1>
+          <h1>Rejoins-nous !</h1>
           <p>
             {" "}
             La Team Rocket déclare la guerre!
@@ -29,14 +29,21 @@ function Acceuil() {
           </p>
         </div>
 
-        <img className="giovanni" src={Giovani} alt="Giovanni" />
+        <div className="giovanni-container">
+          <img className="giovanni" src={Giovani} alt="Giovanni" />
+        </div>
+      </div>
+      <div className="separation">
+        <hr className="separateur" />
+        <img className="rocketball" src={teamRocketball} alt="rocketball" />
+        <hr className="separateur" />
       </div>
 
       <div className="section2">
         <img className="lateam" src={teamRocket1} alt="team-rocket1" />
 
-        <div className="la chasse">
-          <h1>Prêt pour la chasse?</h1>
+        <div className="lachasse">
+          <h1>Prêt pour la chasse ?</h1>
           <p>
             {" "}
             Informé tu seras!
@@ -52,14 +59,38 @@ function Acceuil() {
         </div>
       </div>
 
-      <div className="rocketballi">
+      <div className="separation">
+        <hr className="separateur" />
         <img className="rocketball" src={teamRocketball} alt="rocketball" />
+        <hr className="separateur" />
       </div>
 
       <div className="section3">
-        <img className="jessie" src={jessieRocket} alt="jessierocket" />
-        <img className="miaouss" src={miaoussAlone} alt="miaoussalone" />
-        <img className="james" src={jamesRocket} alt="jamesrocket" />
+        <div className="description-wrapper">
+          <div className="description-jessie">
+            <p>
+              Foedere primis pacis convenit quarum defuisset atque dum augeretur
+              non homines in pacis perfectam primis primis.
+            </p>
+            <img className="jessie" src={jessieRocket} alt="jessierocket" />
+          </div>
+
+          <div className="description-miaouss">
+            <p>
+              Foedere primis pacis convenit quarum defuisset atque dum augeretur
+              non homines in pacis perfectam primis primis.
+            </p>
+            <img className="miaouss" src={miaoussAlone} alt="miaoussalone" />
+          </div>
+
+          <div className="description-james">
+            <p>
+              Foedere primis pacis convenit quarum defuisset atque dum augeretur
+              non homines in pacis perfectam primis primis.
+            </p>
+            <img className="james" src={jamesRocket} alt="jamesrocket" />
+          </div>
+        </div>
       </div>
     </div>
   );
