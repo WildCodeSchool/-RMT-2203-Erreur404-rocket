@@ -18,12 +18,16 @@ function Mapper() {
         strokeColor: "black",
         coords: [114, 375, 130, 308],
         active: true,
-        rectangle: [
-          [0, 0],
-          [0, 557],
-          [640, 0],
-          [640, 557],
-        ],
+      },
+      {
+        id: "2",
+        title: "Road 2",
+        shape: "rect",
+        name: "Road 2",
+        fillColor: "#CD5C5C",
+        strokeColor: "black",
+        coords: [114,275,130,200],
+        active: true,
       },
     ],
   };
@@ -32,7 +36,6 @@ function Mapper() {
       className="map"
       src={URL}
       map={MAP}
-      active
       fillColor="#CD5C5C"
       toggleHighlighted
       stayHighlighted
