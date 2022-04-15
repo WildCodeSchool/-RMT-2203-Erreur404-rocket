@@ -1,12 +1,13 @@
 import React from "react";
 
-import "../styles/Accueil.css";
 import Giovani from "../assets/giovanni-standing.png";
 import teamRocket1 from "../assets/team-rocket1.png";
 import teamRocketball from "../assets/team-rocket ball.png";
 import jessieRocket from "../assets/jessie-rocket.jpg";
 import miaoussAlone from "../assets/miaouss-alone.png";
 import jamesRocket from "../assets/james-rocket.jpg";
+
+import "../styles/Accueil.css";
 
 function Acceuil() {
   return (

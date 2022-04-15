@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
+
 import Accueil from "./pages/Accueil";
 import Pokedex from "./pages/Pokedex";
 import PokemonDescription from "./pages/PokemonDescription";
@@ -8,6 +8,8 @@ import Contact from "./pages/Contact";
 import Panier from "./pages/Panier";
 import Carte from "./pages/Carte";
 import Page404 from "./pages/Page404";
+
+import "./App.css";
 
 function App() {
   return (
