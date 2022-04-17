@@ -63,6 +63,11 @@ a {
 /* ACCUEIL  DESKTOP MODE */
 
 /* SEPARATEUR RECCURENT */
+#video {
+  position: absolute;
+  z-index: -1;
+}
+
 .separation {
   display: flex;
   align-items: center;
@@ -80,10 +85,12 @@ a {
   width: 40px;
 }
 
-/* SEPARATEUR RECCURENT */
-
 .maincontainer {
   width: 100vw;
+}
+
+.phrasedefilante h1 {
+  color: var(--color3);
 }
 
 .maincontainer p {
@@ -108,11 +115,53 @@ a {
 }
 
 .section1 h1 {
-  padding: 8rem 1rem;
+  padding: 1rem 1rem;
   text-align: center;
   margin: 1rem 0 1rem 1rem;
   font-size: 4rem;
   margin-top: -10rem;
+}
+
+.buttonpokedex {
+  display: inline-block;
+  background-color: var(--MainColor);
+  font-family: var(--text-font);
+  border-radius: 18px;
+  border: var(--MainColor);
+  color: var(--color3);
+  text-align: center;
+  font-size: 0, 1rem;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.buttonpokedex span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  background-color: #3e3d7b;
+}
+.buttonpokedex span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.buttonpokedex:hover {
+  background-color: var(--color2);
+}
+.buttonpokedex:hover span {
+  padding-right: 25px;
+  background-color: var(--color2);
+}
+.buttonpokedex:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 .giovanni-container {
   display: flex;
@@ -121,7 +170,7 @@ a {
 }
 
 .giovanni {
-  width: 75%;
+  width: 60%;
 }
 
 .rejoins-nous {
@@ -131,6 +180,9 @@ a {
   width: 40%;
 }
 
+.btn-pkm-details {
+  background-color: aqua;
+}
 .section2 {
   display: flex;
   justify-content: space-around;
@@ -149,16 +201,57 @@ a {
 }
 
 .section2 h1 {
-  padding: 8rem 1rem;
+  padding: 1rem 1rem;
   text-align: center;
   margin: 1rem 0 1rem 1rem;
   margin-top: -10rem;
   font-size: 4rem;
 }
-
+.buttonpanier {
+  display: inline-block;
+  background-color: var(--MainColor);
+  font-family: var(--text-font);
+  border-radius: 10px;
+  border: var(--MainColor);
+  border-radius: 18px;
+  color: var(--color3);
+  text-align: center;
+  font-size: 0, 1rem;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.buttonpanier span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  background-color: #3e3d7b;
+}
+.buttonpanier span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.buttonpanier:hover {
+  background-color: var(--color2);
+}
+.buttonpanier:hover span {
+  padding-right: 25px;
+  background-color: var(--color2);
+}
+.buttonpanier:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 .lateam {
   display: flex;
-  width: 40%;
+  width: 30%;
 }
 
 .lachasse {
