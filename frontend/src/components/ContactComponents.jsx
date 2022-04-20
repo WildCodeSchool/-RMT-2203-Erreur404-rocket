@@ -1,9 +1,11 @@
 import React from "react";
 import imagerocket from "../assets/rocket-recrutment.jpg";
+import rocketmobile from "../assets/giovanni-rocket3.png";
 
 function ContactComponents() {
   return (
     <div className="row">
+      <img className="rocketmobile" src={rocketmobile} alt="rocketmobile" />
       <img className="rocketimg" src={imagerocket} alt="imagecontact" />
       <div className="divcontact">
         <h1 className="comeus">Rejoignez nous !</h1>

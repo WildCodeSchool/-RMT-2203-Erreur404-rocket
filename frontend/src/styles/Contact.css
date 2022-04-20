@@ -29,12 +29,16 @@ h3,
 h4,
 h5 {
   font-family: var(--title-font);
-  font-weight: 500; /* ou 700 en bold */
+  font-weight: 500;
+  /* ou 700 en bold */
 }
+
 p {
   font-family: var(--text-font);
-  font-weight: 500; /* 700 possible en bold */
+  font-weight: 500;
+  /* 700 possible en bold */
 }
+
 li,
 a {
   list-style-type: none;
@@ -49,9 +53,11 @@ a {
 .colortest {
   color: var(--MainColor);
 }
+
 .colortest1 {
   color: var(--color2);
 }
+
 .colortest2 {
   color: var(--color3);
 }
@@ -98,6 +104,10 @@ a {
 
 /* ContactForm JSX */
 
+.rocketmobile {
+  display: none;
+}
+
 .row1 {
   display: flex;
   justify-content: space-around;
@@ -135,11 +145,19 @@ a {
   height: 50%;
   margin-top: 32%;
   margin-right: 5%;
-  image-rendering: -moz-crisp-edges; /* Firefox */
-  image-rendering: -o-crisp-edges; /* Opera */
-  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
   image-rendering: crisp-edges;
-  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */
+}
+
+.pikamobile {
+  display: none;
 }
 
 .row2 {
@@ -165,6 +183,7 @@ a {
   color: var(--color2);
   transition: 200ms;
 }
+
 .contactForm input,
 button,
 textarea {
@@ -183,6 +202,7 @@ textarea {
 textarea {
   background-color: rgb(240, 240, 240);
 }
+
 .contactForm textarea {
   height: 110px;
 }
@@ -198,10 +218,13 @@ textarea {
   display: flex;
 }
 
+.pcontact {
+  color: var(--color3)
+}
+
 .pokeball {
   width: 35%;
   display: flex;
-  margin-left: 18%;
   margin-top: 10%;
 }
 
@@ -220,5 +243,78 @@ textarea {
 @media screen and (max-width: 600px) {
   .rocketimg {
     display: none;
+  }
+
+  .comeus {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .whyrejoinus {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .whyrejoinus2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 16px;
+    font-size: 1.2rem;
+  }
+
+   img.pika {
+    display: none;
+  }
+
+  .pikamobile {
+    display: flex;
+    width: 30%;
+    margin-left: 32%;
+  }
+
+  .contactus {
+    display: flex;
+    justify-content: center;
+    margin-right: none;
+  }
+
+  .adress {
+    margin-left: 4%;
+  }
+
+  .p2 {
+    display: none;
+  }
+
+  .pokeball {
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+  }
+
+  .rocketmobile {
+    display: flex;
+    border-radius: var(--border-radius);
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .formcontact1 {
+    flex-direction: column-reverse;
+  }
+
+  .row1 {
+    flex-direction: column-reverse;
+  }
+
+  .row2 {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .contactForm {
+    margin-top: 6%;
   }
 }

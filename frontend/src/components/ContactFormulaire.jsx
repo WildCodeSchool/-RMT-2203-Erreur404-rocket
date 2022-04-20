@@ -4,6 +4,7 @@ import pika from "../assets/pikachu-team-rocket.png";
 function ContactFormulaire() {
   return (
     <div className="formcontact1">
+      <img className="pikamobile" src={pika} alt="pikachu" />
       <img className="pika" src={pika} alt="pikachu" />
       <div className="card">
         <form method="POST" name="contactform" className="contactForm">
@@ -27,13 +28,15 @@ function ContactFormulaire() {
             placeholder="Tu peux nous écrire"
           />
 
-          <button onClick="" type="submit">
+          <button className="pcontact" type="submit">
             Je contacte la team rocket
           </button>
         </form>
       </div>
     </div>
+    
   );
 }
 
 export default ContactFormulaire;
+
