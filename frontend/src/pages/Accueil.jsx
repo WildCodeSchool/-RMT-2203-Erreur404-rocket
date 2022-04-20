@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Fade from "react-reveal/Fade";
+import Flash from "react-reveal/Flash";
 
 import Giovani from "../assets/giovanni-standing.png";
 import teamRocket1 from "../assets/team-rocket1.png";
@@ -15,21 +17,24 @@ function Acceuil() {
     <div className="maincontainer">
       <div className="section1">
         <div className="rejoins-nous">
-          <h1>Rejoins-nous !</h1>
-          <p>
-            {" "}
-            La Team Rocket est de retour!
-            <br />
-            afin de mettre fin aux défaites et à l&apos;humiliation
-            <br />
-            nous recherchons des chasseurs pour rallier le monde à notre cause
-            <br />
-            jouins-toi à nous ou ce sera la guerre!
-          </p>
-
-          <NavLink className="buttonContact" to="/Contact">
-            <span>Contact le boss </span>
-          </NavLink>
+          <Fade left>
+            <h1>Rejoins-nous !</h1>
+            <p>
+              {" "}
+              La Team Rocket est de retour!
+              <br />
+              afin de mettre fin aux défaites et à l&apos;humiliation
+              <br />
+              nous recherchons des chasseurs pour rallier le monde à notre cause
+              <br />
+              jouins-toi à nous ou ce sera la guerre!
+            </p>
+          </Fade>
+          <Flash>
+            <NavLink className="buttonContact" to="/Contact">
+              <span>Contact le boss </span>
+            </NavLink>
+          </Flash>
         </div>
         <div />
         <div className="giovanni-container">
@@ -46,18 +51,22 @@ function Acceuil() {
         <img className="lateam" src={teamRocket1} alt="team-rocket1" />
 
         <div className="lachasse">
-          <h1>Prêt pour la chasse ?</h1>
-          <p>
-            {" "}
-            Consulte les cartes Pokémon
-            <br />
-            allies puissance et pouvoir pour être le meilleur
-            <br />
-            capture tes proies et pars à leur chasse!
-          </p>
-          <NavLink className="buttonPokedex" to="/Pokedex">
-            <span>C&apos;est par ici la chasse</span>
-          </NavLink>
+          <Fade>
+            <h1>Prêt pour la chasse ?</h1>
+            <p>
+              {" "}
+              Consulte les cartes Pokémon
+              <br />
+              allies puissance et pouvoir pour être le meilleur
+              <br />
+              capture tes proies et pars à leur chasse!
+            </p>
+          </Fade>
+          <Flash>
+            <NavLink className="buttonPokedex" to="/Pokedex">
+              <span>C&apos;est par ici la chasse</span>
+            </NavLink>
+          </Flash>
         </div>
       </div>
 

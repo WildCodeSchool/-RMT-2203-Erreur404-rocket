@@ -63,17 +63,6 @@ a {
 /* ACCUEIL  DESKTOP MODE */
 
 /* SEPARATEUR RECCURENT */
-:root {
-  animation: fadebackground 6s infinite;
-}
-@keyframes fadebackground {
-  from {
-    background-color: var(--color2);
-  }
-  to {
-    background-color: var(--color2);
-  }
-}
 
 .separation {
   display: flex;
