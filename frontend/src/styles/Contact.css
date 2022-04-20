@@ -141,10 +141,9 @@ a {
 }
 
 .pika {
-  width: 25%;
+  width: 22%;
   height: 50%;
-  margin-top: 32%;
-  margin-right: 5%;
+  margin-top: 40%;
   image-rendering: -moz-crisp-edges;
   /* Firefox */
   image-rendering: -o-crisp-edges;
@@ -166,12 +165,13 @@ a {
 
 /* Contact Formulaire */
 
+
 .contactForm {
   padding: 50px;
-  width: 110%;
-  max-width: 400px;
+  width: 160%;
+  max-width: 550px;
   margin: 30px auto;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -191,11 +191,16 @@ textarea {
   padding-left: 5px;
   font-size: 18px;
   border-radius: 10px;
-  border-style: hidden;
+  border-style: none;
 }
 
 .contactForm button {
   background-color: var(--color2);
+}
+
+.contactForm button:hover {
+  background-color: rgb(97, 2, 2);
+  transition: 1000ms;
 }
 
 .contactForm input,
@@ -216,10 +221,21 @@ textarea {
 
 .formcontact1 {
   display: flex;
+  margin: auto;
 }
 
 .pcontact {
-  color: var(--color3)
+  color: var(--color3);
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkStyle {
+  display: flex;
+  background: none;
+
 }
 
 .pokeball {
@@ -238,9 +254,9 @@ textarea {
   }
 }
 
-/* Media Query */
+/* Media Query Mobile */
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
 
   .rocketimg {
     display: none;
@@ -250,12 +266,13 @@ textarea {
     display: flex;
     justify-content: center;
   }
-  
+
   .whyrejoinus {
     font-size: 1rem;
     display: flex;
     justify-content: center;
   }
+
   .whyrejoinus2 {
     display: flex;
     justify-content: center;
@@ -263,7 +280,7 @@ textarea {
     font-size: 1.2rem;
   }
 
-   img.pika {
+  img.pika {
     display: none;
   }
 
@@ -271,6 +288,9 @@ textarea {
     display: flex;
     width: 30%;
     margin: auto;
+    /* Ajout d'un margin right car le margin auto le centre presque correctement par rapport
+    au formcontact mais pas assez à mon gout */
+    margin-right: 37%;
   }
 
   .contactus {
@@ -297,6 +317,7 @@ textarea {
   .rocketmobile {
     display: flex;
     margin: auto;
+    margin-top: 5%;
     width: 50%;
     border-radius: var(--border-radius);
   }
@@ -320,5 +341,114 @@ textarea {
 
   .contactForm {
     margin-top: 6%;
+    max-width: 70%;
   }
+}
+
+/* Media Query Tablette */
+
+@media screen and (min-width : 768px) and (max-width : 1280px) {
+  .rocketimg {
+    display: none;
+  }
+
+  .comeus {
+    display: flex;
+    justify-content: center;
+  }
+
+  .whyrejoinus {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .whyrejoinus2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 16px;
+    font-size: 1.2rem;
+  }
+
+  img.pika {
+    display: none;
+  }
+
+  .pikamobile {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE (non-standard property) */
+  }
+
+  .contactus {
+    display: flex;
+    justify-content: center;
+    margin-right: none;
+  }
+
+  .adress {
+    margin: auto;
+  }
+
+  .p2 {
+    display: none;
+  }
+
+  .pokeball {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10%;
+  }
+
+  .rocketmobile {
+    display: flex;
+    margin: auto;
+    width: 35%;
+    margin-top: 5%;
+    border-radius: var(--border-radius);
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .formcontact1 {
+    flex-direction: column-reverse;
+  }
+
+  .row1 {
+    flex-direction: column-reverse;
+  }
+
+  .row2 {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .contactForm {
+    margin-top: 6%;
+    max-width: 80%;
+  }
+}
+
+
+/* Small Laptop Screen */
+/* Sorry Pika */
+
+@media screen and (min-width: 1025px) and (max-width: 1350px) {
+
+  .pika {
+    display: none;
+  }
+
 }
