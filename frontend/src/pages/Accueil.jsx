@@ -7,36 +7,28 @@ import teamRocketball from "../assets/team-rocket ball.png";
 import jessieRocket from "../assets/jessie-rocket.jpg";
 import miaoussAlone from "../assets/miaouss-alone.png";
 import jamesRocket from "../assets/james-rocket.jpg";
-import backgroundvideo from "../assets/backgroundvideo.mp4";
 
 import "../styles/Accueil.css";
 
 function Acceuil() {
   return (
     <div className="maincontainer">
-      <video autoPlay loop muted id="video">
-        <source src={backgroundvideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
       <div className="section1">
         <div className="rejoins-nous">
           <h1>Rejoins-nous !</h1>
           <p>
             {" "}
-            La Team Rocket déclare la guerre!
+            La Team Rocket est de retour!
             <br />
-            Afin de rallier le monde à notre cause
+            afin de mettre fin aux défaites et à l&apos;humiliation
             <br />
-            Afin de rendre l avenir diabolique et le présent infernal
+            nous recherchons des chasseurs pour rallier le monde à notre cause
             <br />
-            Afin d étendre notre colère jusqu à la voie lactée
-            <br />
-            Attrapez-les tous ou ce sera la guerre!
+            jouins-toi à nous ou ce sera la guerre!
           </p>
 
-          <NavLink className="buttonpokedex" to="/Pokedex">
-            <span>Voir Pokedex</span>
+          <NavLink className="buttonContact" to="/Contact">
+            <span>Contact le boss </span>
           </NavLink>
         </div>
         <div />
@@ -59,12 +51,12 @@ function Acceuil() {
             {" "}
             Consulte les cartes Pokémon
             <br />
-            allies puissance et pouvoir
+            allies puissance et pouvoir pour être le meilleur
             <br />
-            vole tes Pokémons et pars à la chasse!
+            capture tes proies et pars à leur chasse!
           </p>
-          <NavLink className="buttonpanier" to="/Panier">
-            <span>Voir Panier</span>
+          <NavLink className="buttonPokedex" to="/Pokedex">
+            <span>C&apos;est par ici la chasse</span>
           </NavLink>
         </div>
       </div>
@@ -78,17 +70,17 @@ function Acceuil() {
       <div className="section3">
         <div className="description-wrapper">
           <div className="description-jessie">
-            <p>Partout où nous allons, nous semons le chaos !</p>
+            <p>Avec Jessie partout où tu ira, tu semera le chaos !</p>
             <img className="jessie" src={jessieRocket} alt="jessierocket" />
           </div>
 
           <div className="description-miaouss">
-            <p>De retour pour une vengeance sans limite</p>
+            <p>Miaouss t&apos;accompagne, pour une vengeance sans limite</p>
             <img className="miaouss" src={miaoussAlone} alt="miaoussalone" />
           </div>
 
           <div className="description-james">
-            <p>Est-ce la victoire que j entends au loin ?</p>
+            <p>Est-ce ta victoire que j&apos;entends au loin ?</p>
             <img className="james" src={jamesRocket} alt="jamesrocket" />
           </div>
         </div>

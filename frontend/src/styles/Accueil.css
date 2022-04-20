@@ -63,9 +63,16 @@ a {
 /* ACCUEIL  DESKTOP MODE */
 
 /* SEPARATEUR RECCURENT */
-#video {
-  position: absolute;
-  z-index: -1;
+:root {
+  animation: fadebackground 6s infinite;
+}
+@keyframes fadebackground {
+  from {
+    background-color: var(--color2);
+  }
+  to {
+    background-color: var(--color2);
+  }
 }
 
 .separation {
@@ -111,7 +118,7 @@ a {
   box-shadow: var(--box-shadow);
   color: var(--BackgroundColor);
   text-align: center;
-  margin: 2rem 0 2rem 1rem;
+  margin: 0rem 0 3rem 1rem;
 }
 
 .section1 h1 {
@@ -120,9 +127,11 @@ a {
   margin: 1rem 0 1rem 1rem;
   font-size: 4rem;
   margin-top: -10rem;
+  transition-timing-function: linear;
+  transition: stroke-dashoffset 4s, stroke-dasharray 4s;
 }
 
-.buttonpokedex {
+.buttonContact {
   display: inline-block;
   background-color: var(--MainColor);
   font-family: var(--text-font);
@@ -137,14 +146,14 @@ a {
   cursor: pointer;
   margin: 5px;
 }
-.buttonpokedex span {
+.buttonContact span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
   background-color: #3e3d7b;
 }
-.buttonpokedex span:after {
+.buttonContact span:after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
@@ -152,14 +161,14 @@ a {
   right: -20px;
   transition: 0.5s;
 }
-.buttonpokedex:hover {
+.buttonContact:hover {
   background-color: var(--color2);
 }
-.buttonpokedex:hover span {
+.buttonContact:hover span {
   padding-right: 25px;
   background-color: var(--color2);
 }
-.buttonpokedex:hover span:after {
+.buttonContact:hover span:after {
   opacity: 1;
   right: 0;
 }
@@ -197,7 +206,7 @@ a {
   box-shadow: var(--box-shadow);
   color: var(--BackgroundColor);
   text-align: center;
-  margin: 2rem 0 2rem 1rem;
+  margin: 0rem 0 3rem 1rem;
 }
 
 .section2 h1 {
@@ -207,7 +216,7 @@ a {
   margin-top: -10rem;
   font-size: 4rem;
 }
-.buttonpanier {
+.buttonPokedex {
   display: inline-block;
   background-color: var(--MainColor);
   font-family: var(--text-font);
@@ -223,14 +232,14 @@ a {
   cursor: pointer;
   margin: 5px;
 }
-.buttonpanier span {
+.buttonPokedex span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
   background-color: #3e3d7b;
 }
-.buttonpanier span:after {
+.buttonPokedex span:after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
@@ -238,14 +247,14 @@ a {
   right: -20px;
   transition: 0.5s;
 }
-.buttonpanier:hover {
+.buttonPokedex:hover {
   background-color: var(--color2);
 }
-.buttonpanier:hover span {
+.buttonPokedex:hover span {
   padding-right: 25px;
   background-color: var(--color2);
 }
-.buttonpanier:hover span:after {
+.buttonPokedex:hover span:after {
   opacity: 1;
   right: 0;
 }
@@ -284,9 +293,8 @@ a {
   box-shadow: var(--box-shadow);
   color: var(--BackgroundColor);
   text-align: center;
-  color: var(--BackgroundColor);
   padding: 1rem 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .description-jessie,
 .description-miaouss,
@@ -298,7 +306,7 @@ a {
 
 /* ACCUEIL  EN RESPONSIVE */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .separation {
     display: flex;
     align-items: center;
@@ -326,15 +334,16 @@ a {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     color: var(--BackgroundColor);
+    font-size: 1rem;
     text-align: center;
     margin: 2rem 0 4rem 1rem;
   }
 
   .section1 h1 {
+    font-size: 2rem;
     padding: 1rem 1rem;
     text-align: center;
     margin: 1rem 0 1rem 1rem;
-    font-size: var(--title-size);
   }
 
   .rejoins-nous {
@@ -368,10 +377,10 @@ a {
   }
 
   .section2 h1 {
+    font-size: 2rem;
     padding: 1rem 1rem;
     text-align: center;
     margin: 1rem 0 1rem 1rem;
-    font-size: var(--title-size);
   }
 
   .section2 p {
@@ -380,6 +389,7 @@ a {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     color: var(--BackgroundColor);
+    font-size: 1rem;
     text-align: center;
     margin: 2rem 0 4rem 1rem;
   }
@@ -391,7 +401,7 @@ a {
     align-items: center;
     width: 100%;
   }
-  .portrait-wrapper {
+  .description-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -420,9 +430,13 @@ a {
   .description-jessie p,
   .description-miaouss p,
   .description-james p {
-    background-color: var(--BackgroundColor);
-    color: var(--color2);
+    background: linear-gradient(to right, #a21a10, #0f1b1e);
+    border-radius: 10px;
+    background-origin: padding-box, border-box;
+    background-repeat: no-repeat;
+    color: var(--color3);
     box-shadow: none;
+    font-size: 1rem;
   }
 }
 /* FIN DU  ACCUEIL  EN RESPONSIVE */
