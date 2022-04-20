@@ -1,10 +1,8 @@
 import React from "react";
-import Fade from 'react-reveal/Fade';
-import { Link } from 'react-router-dom';
+import Fade from "react-reveal/Fade";
+import { Link } from "react-router-dom";
 import pika from "../assets/pikachu-team-rocket.png";
-
 function ContactFormulaire() {
-
   return (
     <Fade right>
       <div className="formcontact1">
@@ -39,7 +37,9 @@ function ContactFormulaire() {
             />
 
             <button className="pcontact" type="submit">
-              <Link to="/404" className="linkStyle" ><p className="pcontact">Je contacte la team rocket !</p></Link>
+              <Link to="/404" className="linkStyle">
+                <p className="pcontact">Je contacte la team rocket !</p>
+              </Link>
             </button>
           </form>
         </div>
