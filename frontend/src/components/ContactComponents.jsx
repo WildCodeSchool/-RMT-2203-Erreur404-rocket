@@ -1,9 +1,12 @@
 import React from "react";
+
 import Bounce from "react-reveal/Bounce";
 import Flip from "react-reveal/Flip";
 import Fade from "react-reveal/Fade";
+
 import imagerocket from "../assets/rocket-recrutment.jpg";
 import rocketmobile from "../assets/giovanni-rocket3.png";
+
 function ContactComponents() {
   return (
     <div className="row">

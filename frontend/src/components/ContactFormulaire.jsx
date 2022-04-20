@@ -1,7 +1,10 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+
 import { Link } from "react-router-dom";
+
 import pika from "../assets/pikachu-team-rocket.png";
+
 function ContactFormulaire() {
   return (
     <Fade right>
