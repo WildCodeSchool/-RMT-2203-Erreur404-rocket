@@ -34,9 +34,7 @@ function ContactFormulaire() {
         </form>
       </div>
     </div>
-    
   );
 }
 
 export default ContactFormulaire;
-

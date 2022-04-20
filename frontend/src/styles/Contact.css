@@ -241,6 +241,7 @@ textarea {
 /* Media Query */
 
 @media screen and (max-width: 600px) {
+
   .rocketimg {
     display: none;
   }
@@ -269,7 +270,7 @@ textarea {
   .pikamobile {
     display: flex;
     width: 30%;
-    margin-left: 32%;
+    margin: auto;
   }
 
   .contactus {
@@ -279,7 +280,7 @@ textarea {
   }
 
   .adress {
-    margin-left: 4%;
+    margin: auto;
   }
 
   .p2 {
@@ -289,11 +290,14 @@ textarea {
   .pokeball {
     display: flex;
     justify-content: center;
-    margin-left: 30%;
+    margin: auto;
+    margin-top: 6%;
   }
 
   .rocketmobile {
     display: flex;
+    margin: auto;
+    width: 50%;
     border-radius: var(--border-radius);
   }
 
