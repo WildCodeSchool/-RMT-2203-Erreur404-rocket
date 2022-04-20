@@ -132,6 +132,7 @@ html {
   }
   .menuWrapper ul {
     position: fixed;
+    z-index: 89;
     right: -100vw;
     bottom: 0;
     /*right: -100%;*/
