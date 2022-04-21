@@ -19,9 +19,7 @@
     "husky": "^7.0.0"
   },
   "dependencies": {
-    "bounce": "^1.2.3",
     "eslint": "^8.13.0",
-    "prettier": "^2.6.2",
-    "react-reveal": "^1.2.2"
+    "prettier": "^2.6.2"
   }
 }

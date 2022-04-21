@@ -46,11 +46,7 @@ a {
 }
 
 /* VARIABLES GLOBALES */
-* {
-  background-color: var(--BackgroundColor);
-}
-
-.colortest {
+* .colortest {
   color: var(--MainColor);
 }
 
@@ -73,8 +69,8 @@ a {
 
 .rocketimg {
   border-radius: var(--border-radius);
-  width: 23%;
-  margin-top: 2%;
+  width: 50%;
+  margin-top: 5%;
 }
 
 .rocketimg:hover {
@@ -88,13 +84,14 @@ a {
 
 .whyrejoinus {
   color: var(--color3);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  padding-top: 6%;
 }
 
 .whyrejoinus2 {
   color: var(--color3);
-  font-size: 1.6rem;
-  margin-top: 2%;
+  font-size: 1.4rem;
+  margin-top: 7%;
 }
 
 .jjimg {
@@ -118,18 +115,24 @@ a {
 .contactus {
   color: var(--color2);
   font-size: 4rem;
+  padding-top: 4%;
 }
 
 .adress {
   color: var(--color3);
+  padding-top: 7%;
+  font-size: 1.3rem;
 }
 
 .p1 {
   color: var(--color3);
+  padding-top: 7%;
 }
 
 .p2 {
   color: var(--color3);
+  padding-top: 7%;
+  font-size: 1.2rem;
 }
 
 .jassie {
@@ -143,7 +146,7 @@ a {
 .pika {
   width: 22%;
   height: 50%;
-  margin-top: 40%;
+  margin-top: 50%;
   image-rendering: -moz-crisp-edges;
   /* Firefox */
   image-rendering: -o-crisp-edges;
@@ -176,7 +179,7 @@ a {
   flex-direction: column;
   gap: 20px;
   background-color: var(--color3);
-  margin-top: 25%;
+  margin-top: 50%;
 }
 
 .contactForm:hover {

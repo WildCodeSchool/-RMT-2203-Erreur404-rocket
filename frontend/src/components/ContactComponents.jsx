@@ -1,8 +1,6 @@
 import React from "react";
 
-import Bounce from "react-reveal/Bounce";
-import Flip from "react-reveal/Flip";
-import Fade from "react-reveal/Fade";
+import { Slide, Fade } from "react-awesome-reveal";
 
 import imagerocket from "../assets/rocket-recrutment.jpg";
 import rocketmobile from "../assets/giovanni-rocket3.png";
@@ -10,15 +8,15 @@ import rocketmobile from "../assets/giovanni-rocket3.png";
 function ContactComponents() {
   return (
     <div className="row">
-      <Bounce top>
+      <Slide triggerOnce>
         <img className="rocketmobile" src={rocketmobile} alt="rocketmobile" />
         <img className="rocketimg" src={imagerocket} alt="imagecontact" />
-      </Bounce>
+      </Slide>
       <div className="divcontact">
-        <Flip top cascade>
+        <Slide triggerOnce>
           <h1 className="comeus">Rejoignez nous !</h1>
-        </Flip>
-        <Fade left>
+        </Slide>
+        <Fade delay={1000}>
           <p className="whyrejoinus">
             Envie de rejoindre Jessie et James ?<br />
             Ou encore d&apos;atteindre Giovanni ? Essaye de nous ecrire alors !
@@ -26,7 +24,7 @@ function ContactComponents() {
             Si tu fais preuve d&apos;audace tu peux nous rejoindre...
           </p>
         </Fade>
-        <Fade right>
+        <Fade delay={2000}>
           <p className="whyrejoinus2">
             Tu trouveras tout les elements necessaires
             <br />

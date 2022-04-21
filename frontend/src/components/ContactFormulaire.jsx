@@ -1,5 +1,6 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+
+import { Bounce } from "react-awesome-reveal";
 
 import { Link } from "react-router-dom";
 
@@ -7,7 +8,7 @@ import pika from "../assets/pikachu-team-rocket.png";
 
 function ContactFormulaire() {
   return (
-    <Fade right>
+    <Bounce>
       <div className="formcontact1">
         <img className="pikamobile" src={pika} alt="pikachu" />
         <img className="pika" src={pika} alt="pikachu" />
@@ -47,7 +48,7 @@ function ContactFormulaire() {
           </form>
         </div>
       </div>
-    </Fade>
+    </Bounce>
   );
 }
 

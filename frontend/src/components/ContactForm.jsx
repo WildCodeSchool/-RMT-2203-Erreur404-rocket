@@ -1,8 +1,10 @@
 import React from "react";
 
-import pokeball from "../assets/team-rocket ball2.png";
+import { Fade } from "react-awesome-reveal";
 
 import ContactFormulaire from "./ContactFormulaire";
+
+import pokeball from "../assets/team-rocket ball2.png";
 
 function ContactForm() {
   return (
@@ -13,17 +15,20 @@ function ContactForm() {
         <address className="adress">
           <p>Notre email : recrutement@teamrocket.fr</p>
           <br />
-          <p>Téléphone : +00 XXX XXX</p>
+          <p>Téléphone : +33 15412563</p>
         </address>
         <p className="p2">
-          Lorem ipsum dolor sit amet. <br /> Est libero consectetur aut maxime
-          suscipit
-          <br /> est saepe esse non molestiae eligendi non impedit repellat.{" "}
+          Et voilà tu as toutes nos infos.
           <br />
-          Sed vero sapiente et tenetur velit qui libero distinctio eos pariatur
-          eveniet.{" "}
+          Libre à toi désormais de nous contacter.
+          <br />
+          N&apos;oublie pas que nous recherchons régulierement des combattants !
+          <br />
+          Mais que nous ne sommes pas non plus dans le besoin.
         </p>
-        <img className="pokeball" src={pokeball} alt="pokeballanimate" />
+        <Fade delay={1500}>
+          <img className="pokeball" src={pokeball} alt="pokeballanimate" />
+        </Fade>
       </div>
     </div>
   );
