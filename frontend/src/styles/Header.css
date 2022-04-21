@@ -113,7 +113,7 @@ html {
 
 .banneer-container {
   height: 400px;
-  width: 100vw;
+  width: 99vw;
   background-image: url(../assets/team-rocket-complete.jpg);
   background-position: bottom;
   background-size: cover;
@@ -128,7 +128,7 @@ html {
     justify-content: flex-start;
   }
   .banneer-container {
-    height: 200px;
+    height: 250px;
   }
   .menuWrapper ul {
     position: fixed;
@@ -147,7 +147,7 @@ html {
   }
 
   .show-nav .menuWrapper ul {
-    width: 100vw;
+    width: 100%;
     right: 0;
   }
   .img1-responsive-menu {
@@ -174,7 +174,7 @@ html {
     padding-top: 5rem;
   }
   .menuWrapper li:hover {
-    width: 100vw;
+    width: 100%;
   }
   .navbar-burger {
     z-index: 100;
@@ -182,7 +182,7 @@ html {
     height: 5px;
     display: block;
     position: fixed;
-    top: 10%;
+    top: 20px;
     right: 3rem;
     margin-bottom: 1rem;
   }
