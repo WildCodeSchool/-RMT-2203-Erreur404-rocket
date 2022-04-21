@@ -85,10 +85,6 @@ a {
   width: 100vw;
 }
 
-.phrasedefilante h1 {
-  color: var(--color3);
-}
-
 .maincontainer p {
   font-size: 1.5rem;
 }
@@ -120,7 +116,8 @@ a {
   transition: stroke-dashoffset 4s, stroke-dasharray 4s;
 }
 
-.buttonContact {
+.buttonContact,
+.buttonPokedex {
   display: inline-block;
   background-color: var(--MainColor);
   font-family: var(--text-font);
@@ -135,14 +132,16 @@ a {
   cursor: pointer;
   margin: 5px;
 }
-.buttonContact span {
+.buttonContact,
+.buttonPokedex {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
   background-color: #3e3d7b;
 }
-.buttonContact span:after {
+.buttonContact :after,
+.buttonPokedex :after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
@@ -150,17 +149,20 @@ a {
   right: -20px;
   transition: 0.5s;
 }
-.buttonContact:hover {
+.buttonContact :hover,
+.buttonPokedex:hover {
   background-color: var(--color2);
 }
-.buttonContact:hover span {
+.buttonContact:hover {
   padding-right: 25px;
   background-color: var(--color2);
 }
-.buttonContact:hover span:after {
+.buttonContact :after,
+.buttonPokedex:hover :after {
   opacity: 1;
   right: 0;
 }
+
 .giovanni-container {
   display: flex;
   justify-content: flex-end;
@@ -178,9 +180,6 @@ a {
   width: 40%;
 }
 
-.btn-pkm-details {
-  background-color: aqua;
-}
 .section2 {
   display: flex;
   justify-content: space-around;
@@ -205,48 +204,7 @@ a {
   margin-top: -10rem;
   font-size: 4rem;
 }
-.buttonPokedex {
-  display: inline-block;
-  background-color: var(--MainColor);
-  font-family: var(--text-font);
-  border-radius: 10px;
-  border: var(--MainColor);
-  border-radius: 18px;
-  color: var(--color3);
-  text-align: center;
-  font-size: 0, 1rem;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-.buttonPokedex span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-  background-color: #3e3d7b;
-}
-.buttonPokedex span:after {
-  content: "\00bb";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-.buttonPokedex:hover {
-  background-color: var(--color2);
-}
-.buttonPokedex:hover span {
-  padding-right: 25px;
-  background-color: var(--color2);
-}
-.buttonPokedex:hover span:after {
-  opacity: 1;
-  right: 0;
-}
+
 .lateam {
   display: flex;
   width: 30%;
@@ -310,6 +268,10 @@ a {
     background-color: var(--color2);
   }
 
+  .buttonContact {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
   .section1 {
     display: flex;
     justify-content: center;
@@ -325,7 +287,7 @@ a {
     color: var(--BackgroundColor);
     font-size: 1rem;
     text-align: center;
-    margin: 2rem 0 4rem 1rem;
+    margin: 2rem 0 3rem 1rem;
   }
 
   .section1 h1 {

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Fade from "react-reveal/Fade";
-import Flash from "react-reveal/Flash";
+
+import { Slide } from "react-awesome-reveal";
 
 import Giovani from "../assets/giovanni-standing.png";
 import teamRocket1 from "../assets/team-rocket1.png";
@@ -17,7 +17,7 @@ function Acceuil() {
     <div className="maincontainer">
       <div className="section1">
         <div className="rejoins-nous">
-          <Fade left>
+          <Slide>
             <h1>Rejoins-nous !</h1>
             <p>
               {" "}
@@ -29,12 +29,10 @@ function Acceuil() {
               <br />
               jouins-toi à nous ou ce sera la guerre!
             </p>
-          </Fade>
-          <Flash>
             <NavLink className="buttonContact" to="/Contact">
-              <span>Contact le boss </span>
+              Contact le boss
             </NavLink>
-          </Flash>
+          </Slide>
         </div>
         <div />
         <div className="giovanni-container">
@@ -49,9 +47,8 @@ function Acceuil() {
 
       <div className="section2">
         <img className="lateam" src={teamRocket1} alt="team-rocket1" />
-
         <div className="lachasse">
-          <Fade>
+          <Slide>
             <h1>Prêt pour la chasse ?</h1>
             <p>
               {" "}
@@ -61,12 +58,10 @@ function Acceuil() {
               <br />
               capture tes proies et pars à leur chasse!
             </p>
-          </Fade>
-          <Flash>
             <NavLink className="buttonPokedex" to="/Pokedex">
-              <span>C&apos;est par ici la chasse</span>
+              C&apos;est par ici la chasse
             </NavLink>
-          </Flash>
+          </Slide>
         </div>
       </div>
 
