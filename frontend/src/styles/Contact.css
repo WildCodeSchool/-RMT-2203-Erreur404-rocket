@@ -60,17 +60,23 @@ a {
 
 .row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding-top: 2rem;
 }
-
+.row h1,
+.row p {
+  text-align: center;
+}
+.row-col-1 {
+  width: 45%;
+}
 .divcontact {
-  margin-top: 8%;
+  width: 45%;
 }
 
 .rocketimg {
   border-radius: var(--border-radius);
   width: 50%;
-  margin-top: 5%;
 }
 
 .rocketimg:hover {
@@ -98,6 +104,9 @@ a {
   width: 65%;
   padding-top: 5%;
 }
+.css-1dxe8h0 {
+  width: 45%;
+}
 
 /* ContactForm JSX */
 
@@ -107,9 +116,11 @@ a {
 
 .row1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: row-reverse;
   margin-top: 3%;
+  width: 100%;
+  padding-bottom: 5rem;
 }
 
 .contactus {
@@ -144,9 +155,8 @@ a {
 }
 
 .pika {
-  width: 22%;
-  height: 50%;
-  margin-top: 50%;
+  width: 40%;
+  padding-bottom: 1rem;
   image-rendering: -moz-crisp-edges;
   /* Firefox */
   image-rendering: -o-crisp-edges;
@@ -162,24 +172,18 @@ a {
   display: none;
 }
 
-.row2 {
-  margin-left: 10%;
-}
-
 /* Contact Formulaire */
-
 
 .contactForm {
   padding: 50px;
-  width: 160%;
+  width: 500px;
   max-width: 550px;
-  margin: 30px auto;
+  margin: 5px;
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
   gap: 20px;
   background-color: var(--color3);
-  margin-top: 50%;
 }
 
 .contactForm:hover {
@@ -225,6 +229,9 @@ textarea {
 .formcontact1 {
   display: flex;
   margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .pcontact {
@@ -238,12 +245,12 @@ textarea {
 .linkStyle {
   display: flex;
   background: none;
-
 }
 
 .pokeball {
   width: 35%;
   display: flex;
+  margin: auto;
   margin-top: 10%;
 }
 
@@ -256,20 +263,182 @@ textarea {
     transform: rotate(1800deg) translate(0.45px);
   }
 }
+.row2 {
+  width: 45%;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  /* SEPARATEUR RECCURENT */
 
-/* Media Query Mobile */
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
-
+  .separation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0 10rem 0;
+  }
+  .separateur {
+    margin: 0 2rem;
+    height: 5px;
+    border: none;
+    border-radius: var(--border-radius);
+    width: 30vw;
+    background-color: var(--color2);
+  }
+  .rocketball {
+    width: 60px;
+  }
+  /*  FIN SEPARATEUR RECCURENT */
   .rocketimg {
     display: none;
   }
-
+  .css-1dxe8h0 {
+    width: 100%;
+  }
+  .row-col-1 {
+    width: 100%;
+  }
+  .css-2qfv45 {
+    width: 100%;
+  }
   .comeus {
     display: flex;
     justify-content: center;
   }
 
+  .whyrejoinus {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .whyrejoinus2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 16px;
+    font-size: 1.2rem;
+  }
+
+  img.pika {
+    display: none;
+  }
+  .divcontact {
+    width: 100%;
+  }
+
+  .pikamobile {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE (non-standard property) */
+  }
+
+  .contactus {
+    margin-right: none;
+    text-align: center;
+  }
+
+  .adress {
+    margin: auto;
+    text-align: center;
+  }
+
+  .p2 {
+    display: none;
+  }
+
+  .pokeball {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10%;
+  }
+  .css-2qfv45 {
+    width: 100%;
+  }
+  .rocketmobile {
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    border-radius: var(--border-radius);
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .formcontact1 {
+    flex-direction: column-reverse;
+  }
+
+  .row1 {
+    flex-direction: column-reverse;
+  }
+
+  .row2 {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .contactForm {
+    margin-top: 6%;
+    max-width: 80%;
+  }
+}
+/* Media Query Mobile */
+
+@media screen and (max-width: 767px) {
+  /* SEPARATEUR RECCURENT */
+
+  .separation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0 10rem 0;
+  }
+  .separateur {
+    margin: 0 2rem;
+    height: 5px;
+    border: none;
+    border-radius: var(--border-radius);
+    width: 30vw;
+    background-color: var(--color2);
+  }
+  .rocketball {
+    width: 60px;
+  }
+  /*  FIN SEPARATEUR RECCURENT */
+  .rocketimg {
+    display: none;
+  }
+  .divcontact {
+    width: 100%;
+  }
+  .row-col-1 {
+    width: 100%;
+  }
+  .row2 {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .css-1dxe8h0 {
+    width: 100%;
+  }
+  .comeus {
+    display: flex;
+    justify-content: center;
+  }
+  .contactus {
+    text-align: center;
+  }
   .whyrejoinus {
     font-size: 1rem;
     display: flex;
@@ -313,18 +482,23 @@ textarea {
   .pokeball {
     display: flex;
     justify-content: center;
+    width: 20%;
     margin: auto;
     margin-top: 6%;
   }
 
   .rocketmobile {
     display: flex;
-    margin: auto;
+
     margin-top: 5%;
-    width: 50%;
+    width: 100%;
     border-radius: var(--border-radius);
   }
-
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .row {
     flex-direction: column;
   }
@@ -341,117 +515,22 @@ textarea {
     flex-direction: column;
     margin: auto;
   }
-
   .contactForm {
     margin-top: 6%;
-    max-width: 70%;
+    max-width: 65%;
+  }
+  .adress {
+    text-align: center;
   }
 }
 
 /* Media Query Tablette */
 
-@media screen and (min-width : 768px) and (max-width : 1280px) {
-  .rocketimg {
-    display: none;
-  }
-
-  .comeus {
-    display: flex;
-    justify-content: center;
-  }
-
-  .whyrejoinus {
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-  }
-
-  .whyrejoinus2 {
-    display: flex;
-    justify-content: center;
-    margin-right: 16px;
-    font-size: 1.2rem;
-  }
-
-  img.pika {
-    display: none;
-  }
-
-  .pikamobile {
-    display: flex;
-    width: 30%;
-    margin: auto;
-    image-rendering: -moz-crisp-edges;
-    /* Firefox */
-    image-rendering: -o-crisp-edges;
-    /* Opera */
-    image-rendering: -webkit-optimize-contrast;
-    /* Webkit (non-standard naming) */
-    image-rendering: crisp-edges;
-    -ms-interpolation-mode: nearest-neighbor;
-    /* IE (non-standard property) */
-  }
-
-  .contactus {
-    display: flex;
-    justify-content: center;
-    margin-right: none;
-  }
-
-  .adress {
-    margin: auto;
-  }
-
-  .p2 {
-    display: none;
-  }
-
-  .pokeball {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 10%;
-  }
-
-  .rocketmobile {
-    display: flex;
-    margin: auto;
-    width: 35%;
-    margin-top: 5%;
-    border-radius: var(--border-radius);
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
-  .formcontact1 {
-    flex-direction: column-reverse;
-  }
-
-  .row1 {
-    flex-direction: column-reverse;
-  }
-
-  .row2 {
-    flex-direction: column;
-    margin: auto;
-  }
-
-  .contactForm {
-    margin-top: 6%;
-    max-width: 80%;
-  }
-}
-
-
 /* Small Laptop Screen */
 /* Sorry Pika */
 
 @media screen and (min-width: 1025px) and (max-width: 1350px) {
-
   .pika {
     display: none;
   }
-
 }

@@ -11,7 +11,11 @@ function ContactForm() {
     <div className="row1">
       <ContactFormulaire />
       <div className="row2">
-        <h1 className="contactus">Contactez nous</h1>
+        <h1 className="contactus">
+          Contactez
+          <br />
+          -nous !
+        </h1>
         <address className="adress">
           <p>Notre email : recrutement@teamrocket.fr</p>
           <br />
