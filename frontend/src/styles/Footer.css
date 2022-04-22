@@ -51,7 +51,6 @@ html {
 .footer {
   flex-wrap: wrap;
   width: 100%;
-  position: absolute;
   bottom: 0;
   background-color: #3e3d7b;
   display: flex;

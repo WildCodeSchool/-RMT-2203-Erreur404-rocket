@@ -1,0 +1,376 @@
+/* RESET */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --title-font: "Reem Kufi", sans-serif;
+  --title-size: 48px;
+  --text-font: "Overpass", sans-serif;
+  --text-size: 16px;
+  --main-line-lenght: 25ch;
+  line-height: 1.5;
+  box-sizing: border-box;
+  letter-spacing: 0.1rem;
+
+  --BackgroundColor: #0f1b1e;
+  --MainColor: #3e3d7b;
+  --color2: #a21a10;
+  --color3: #f7f7ff;
+  --border-radius: 18px;
+  --box-shadow: var(--color3) 0px 1px 4px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--title-font);
+  font-weight: 500; /* ou 700 en bold */
+}
+h1 {
+  color: var(--color2);
+}
+p {
+  font-family: var(--text-font);
+  font-weight: 500; /* 700 possible en bold */
+  font-size: 1.5rem;
+}
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* VARIABLES GLOBALES */
+
+/* ACCUEIL  DESKTOP MODE */
+
+/* SEPARATEUR RECCURENT */
+
+.separation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem 0 10rem 0;
+}
+.separateur {
+  margin: 0 2rem;
+  height: 5px;
+  border: none;
+  border-radius: var(--border-radius);
+  width: 30vw;
+  background-color: var(--color2);
+}
+.rocketball {
+  width: 60px;
+}
+/*  FIN SEPARATEUR RECCURENT */
+
+.section1,
+.section2 {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section1 p,
+.section2 p {
+  padding: 1rem 1rem;
+  background-color: var(--color3);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  color: var(--BackgroundColor);
+  text-align: center;
+  margin: 0rem 0 3rem 1rem;
+}
+
+.section1 h1,
+.section2 h1,
+.section3 h1 {
+  padding: 1rem 1rem;
+  text-align: center;
+  margin: 1rem 0 1rem 1rem;
+  font-size: 4rem;
+  transition-timing-function: linear;
+  transition: stroke-dashoffset 4s, stroke-dasharray 4s;
+}
+/* BUTTONS CTA */
+.buttonContact,
+.buttonPokedex {
+  display: inline-block;
+  position: relative;
+  background-color: var(--MainColor);
+  font-family: var(--text-font);
+  border-radius: 18px;
+  border: var(--MainColor);
+  color: var(--color3);
+  text-align: center;
+  font-size: 0, 1rem;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.buttonContact :after,
+.buttonPokedex :after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.buttonContact:hover,
+.buttonPokedex:hover {
+  background-color: var(--color2);
+  padding-right: 25px;
+}
+
+.buttonContact::after,
+.buttonPokedex:hover::after {
+  opacity: 1;
+  right: 0;
+}
+
+/* FIN BUTTONS CTA */
+
+.giovanni-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.giovanni {
+  width: 400px;
+}
+
+.rejoins-nous {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.lateam {
+  display: flex;
+  width: 400px;
+}
+
+.lachasse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.description-wrapper {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.jessie,
+.james {
+  width: 80%;
+  background-color: var(--color3);
+  border-radius: 90%;
+}
+
+.miaouss {
+  background-color: #3e3d7b;
+  width: 70%;
+  height: auto;
+  border-radius: 100%;
+}
+
+.description-wrapper p {
+  background-color: var(--color3);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  color: var(--BackgroundColor);
+  text-align: center;
+  padding: 1rem 1rem;
+  margin-bottom: 4rem;
+}
+.description-jessie,
+.description-miaouss,
+.description-james {
+  width: 30%;
+  padding: 5rem 0 5rem 0;
+}
+
+/* FIN DU ACCUEIL  DESKTOP MODE */
+
+/* ACCUEIL  EN RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+  .separation {
+    margin: 10rem 0 10rem 0;
+  }
+  .separateur {
+    height: 4px;
+    width: 25%;
+  }
+  .rocketball {
+    width: 40px;
+  }
+
+  .buttonContact,
+  .buttonPokedex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 180px;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  .section1,
+  .section2,
+  .section3 {
+    flex-direction: column;
+  }
+
+  .section1 p,
+  .section2 p {
+    padding: 1rem 1rem;
+    background-color: var(--color3);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    color: var(--BackgroundColor);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem 0 3rem 1rem;
+  }
+
+  .section1 h1,
+  .section2 h1,
+  .section3 h1 {
+    font-size: 3rem;
+  }
+
+  .css-2qfv45 {
+    width: 90%;
+  }
+  .rejoins-nous {
+    margin-left: 0;
+    padding-bottom: 5rem;
+    width: 100%;
+  }
+
+  .giovanni {
+    width: 300px;
+  }
+
+  .lateam {
+    width: 300px;
+  }
+  .lachasse {
+    margin-top: 2rem;
+    width: 90%;
+  }
+
+  .jessie,
+  .james {
+    width: 50%;
+    background-color: var(--color3);
+    border-radius: 90%;
+    margin-bottom: 2rem;
+  }
+  .miaouss {
+    background-color: var(--BackgroundColor);
+    width: 30%;
+    border-radius: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .description-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .description-jessie,
+  .description-miaouss,
+  .description-james {
+    background: linear-gradient(to right, #a21a10, #0f1b1e);
+    width: 100vw;
+    padding: 0;
+  }
+  .description-jessie p,
+  .description-miaouss p,
+  .description-james p {
+    background: var(--BackgroundColor);
+    border-radius: 0px;
+    background-origin: padding-box, border-box;
+    background-repeat: no-repeat;
+    color: var(--color3);
+    box-shadow: none;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .separation {
+    margin: 5rem 0 5rem 0;
+  }
+  .section1 h1,
+  .section2 h1,
+  .section3 h1 {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+
+  .section1 p,
+  .section2 p,
+  .section3 p {
+    color: var(--BackgroundColor);
+    font-size: 1rem;
+    padding: 2rem 0 3rem 1rem;
+    margin: 1rem 0 2rem 0;
+  }
+
+  .css-2qfv45 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .rejoins-nous {
+    width: 90%;
+  }
+
+  .giovanni {
+    width: 200px;
+  }
+
+  .lateam {
+    width: 200px;
+  }
+  .description-jessie p,
+  .description-miaouss p,
+  .description-james p {
+    margin-top: 0;
+    color: var(--color3);
+    font-size: 1rem;
+  }
+
+  .jessie,
+  .james {
+    width: 150px;
+    height: 150px;
+  }
+  .miaouss {
+    width: 150px;
+  }
+}
+/* FIN DU  ACCUEIL  EN RESPONSIVE */
