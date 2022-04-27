@@ -1,22 +1,26 @@
 import React from "react";
+import { Slide } from "react-awesome-reveal";
 
 import rocketmongolfiere from "../assets/rocket-mongolfiere.jpg";
-
+import teamrocketball from "../assets/team-rocket ball.png";
 import "../styles/Page404.css";
 
 function Page404() {
   return (
     <div className="maincontainer">
-      <div className="section1">
-        <h1>Error</h1>
+      <Slide>
+        <div className="partie1">
+          <div className="erreur">
+            <b>4</b>
+            <img src={teamrocketball} alt="" />
+            <b>4</b>
+          </div>
+          <h1>Oups... une fois de plus la Team s&apos;envole!</h1>
+        </div>
+      </Slide>
 
-        <p>
-          4<span>a</span>4
-        </p>
-        <h2>Oups! La Team Rocket revient</h2>
-      </div>
-
-      <div className="rocket-mongolfiere">
+      <div className="partie2">
+        <h2> Mais pas de panique, tu peux retenter ta chance!</h2>
         <img
           className="mongolfiere"
           src={rocketmongolfiere}
