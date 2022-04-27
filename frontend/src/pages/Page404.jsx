@@ -23,15 +23,16 @@ function Page404() {
           <h1>Oups... une fois de plus la Team s&apos;envole!</h1>
         </div>
       </Slide>
-
-      <div className="partie2">
-        <h2> Mais pas de panique, tu peux retenter ta chance!</h2>
-        <img
-          className="mongolfiere"
-          src={rocketmongolfiere}
-          alt="rocketmongolfiere"
-        />
-      </div>
+      <Slide>
+        <div className="partie2">
+          <h2> Mais pas de panique, tu peux retenter ta chance!</h2>
+          <img
+            className="mongolfiere"
+            src={rocketmongolfiere}
+            alt="rocketmongolfiere"
+          />
+        </div>
+      </Slide>
     </div>
   );
 }
