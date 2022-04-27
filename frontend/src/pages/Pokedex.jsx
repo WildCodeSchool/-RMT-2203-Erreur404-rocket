@@ -8,6 +8,7 @@ import teamRocketball from "../assets/team-rocket ball.png";
 import pokedexImg from "../assets/pokedex.png";
 
 import "../styles/Pokedex.css";
+import ListEncounterAreaByPokemon from "../data/ListEncouterAreaByPokemon";
 
 function Pokedex() {
   const [searchValue, setSearchValue] = useState("");
@@ -21,6 +22,7 @@ function Pokedex() {
           res.data.results.map((pokemon, index) => ({
             ...pokemon,
             pokedexnum: index + 1,
+            area: ListEncounterAreaByPokemon[index],
           }))
         )
       );
