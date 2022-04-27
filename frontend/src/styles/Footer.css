@@ -1,0 +1,150 @@
+/* RESET */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --title-font: "Reem Kufi", sans-serif;
+  --title-size: 48px;
+  --text-font: "Overpass", sans-serif;
+  --text-size: 16px;
+  --main-line-lenght: 25ch;
+  line-height: 1.5;
+  box-sizing: border-box;
+  letter-spacing: 0.1rem;
+
+  --BackgroundColor: #0f1b1e;
+  --MainColor: #3e3d7b;
+  --color2: #a21a10;
+  --color3: #f7f7ff;
+  --border-radius: 18px;
+  --box-shadow: 0 3px 7px var(--color3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--title-font);
+  font-weight: 500; /* ou 700 en bold */
+}
+p {
+  font-family: var(--text-font);
+  font-weight: 500; /* 700 possible en bold */
+}
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+html {
+  background-color: #0f1b1e;
+}
+
+/* RESET */
+
+/* FOOTER */
+
+.footer {
+  flex-wrap: wrap;
+  width: 100%;
+  bottom: 0;
+  background-color: #3e3d7b;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3e3d7b;
+}
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-navigation ul {
+  display: flex;
+}
+
+.footer-navigation ul li {
+  padding: 0rem 2rem;
+}
+
+.footer-wrapper .logo {
+  width: 250px;
+}
+
+.footer-navigation li {
+  font-size: 1.3rem;
+  text-decoration: underline;
+  color: var(--color3);
+}
+.social-networks {
+  display: flex;
+}
+.social-networks img {
+  padding: 0rem 1rem;
+}
+
+.description {
+  background-color: var(--color2);
+  color: var(--color3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.description p {
+  margin: 2rem 0;
+}
+
+/* FOOTER RESPONSIVE */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer-navigation ul li {
+    padding: 0rem 0.5rem;
+  }
+  .footer-wrapper .logo {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    bottom: 0px;
+    width: 100%;
+  }
+  .footer-navigation ul {
+    margin-bottom: 2rem;
+  }
+
+  .footer-navigation ul li {
+    font-size: 1rem;
+    padding: 0rem 1rem;
+  }
+  .footer-wrapper .logo {
+    width: 180px;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  .social-networks img {
+    width: 25px;
+    margin: 1rem 1rem;
+  }
+
+  .description p {
+    font-size: 0.8rem;
+  }
+}

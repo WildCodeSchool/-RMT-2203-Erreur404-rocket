@@ -1,0 +1,231 @@
+/* RESET */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --title-font: "Reem Kufi", sans-serif;
+  --title-size: 48px;
+  --text-font: "Overpass", sans-serif;
+  --text-size: 16px;
+  --main-line-lenght: 25ch;
+  line-height: 1.5;
+  box-sizing: border-box;
+  letter-spacing: 0.1rem;
+
+  --BackgroundColor: #0f1b1e;
+  --MainColor: #3e3d7b;
+  --color2: #a21a10;
+  --color3: #f7f7ff;
+  --border-radius: 18px;
+  --box-shadow: 0 3px 7px var(--color3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--title-font);
+  font-weight: 500; /* ou 700 en bold */
+}
+p {
+  font-family: var(--text-font);
+  font-weight: 500; /* 700 possible en bold */
+}
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+html {
+  background-color: #0f1b1e;
+}
+
+/* RESET */
+
+/* HEADER DESKTOP */
+.header {
+  background-color: var(--MainColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.logo-responsive-menu {
+  display: none;
+}
+
+.menuWrapper {
+  background-color: var(--MainColor);
+}
+
+.menuWrapper ul {
+  width: 100vw;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  background-color: var(--MainColor);
+  margin: 0.5rem 0rem;
+}
+.menuWrapper li {
+  background-color: var(--MainColor);
+  padding: 1rem 2rem;
+  position: relative;
+  text-decoration: none;
+  font-family: var(--title-font);
+  color: var(--color3);
+  transition: 0.5s;
+  font-size: 1.3rem;
+}
+
+.menuWrapper li::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: var(--color3);
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.menuWrapper li:hover {
+  color: var(--color2);
+}
+.menuWrapper li:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.navbar-burger {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  color: var(--color3);
+  display: none;
+}
+
+.banneer-container {
+  height: 400px;
+  width: 100vw;
+  background-image: url(../assets/team-rocket-complete.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* HEADER RESPONSIVE TABLET */
+
+@media screen and (max-width: 1023px) {
+  .header {
+    min-height: 200px;
+    justify-content: flex-start;
+  }
+  .banneer-container {
+    height: 200px;
+  }
+  .menuWrapper ul {
+    position: fixed;
+    z-index: 89;
+    right: -100vw;
+    bottom: 0;
+    /*right: -100%;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--BackgroundColor);
+    height: 100vh;
+    text-align: center;
+    transition: 0.6s;
+    box-shadow: var(--box-shadow);
+  }
+
+  .show-nav .menuWrapper ul {
+    width: 100vw;
+    right: 0;
+  }
+  .img1-responsive-menu {
+    width: 100%;
+    height: 200px;
+    display: initial;
+    background-image: url(../assets/miaouss-alone.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 2rem;
+  }
+
+  .menuWrapper .active {
+    width: 100%;
+  }
+  .menuWrapper li {
+    padding: 0;
+    font-size: 1.5rem;
+    margin: 1.6rem 0;
+    background-color: var(--BackgroundColor);
+  }
+  .menuWrapper ul:first-child {
+    padding-top: 5rem;
+  }
+  .menuWrapper li:hover {
+    width: 100vw;
+  }
+  .navbar-burger {
+    z-index: 100;
+    width: 5px;
+    height: 5px;
+    display: block;
+    position: fixed;
+    top: 10%;
+    right: 3rem;
+    margin-bottom: 1rem;
+  }
+  .navbar-burger:hover {
+    cursor: pointer;
+  }
+
+  .bar,
+  .bar::before,
+  .bar::after {
+    display: block;
+    width: 40px;
+    height: 3px;
+    position: relative;
+    border-radius: var(--border-radius);
+    background-color: var(--color3);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .bar::before,
+  .bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .bar::before {
+    transform: translateY(-12px);
+  }
+  .bar::after {
+    transform: translateY(12px);
+  }
+  /*quand show nav est true,  on va effectuer la rotation de nos spans pour créer une animation de croix.    */
+  .show-nav .bar::before {
+    transform: rotate(45deg);
+  }
+
+  .show-nav .bar::after {
+    transform: rotate(-45deg);
+  }
+
+  .show-nav .bar {
+    width: 0;
+    background: transparent;
+    /*on cache la span du milieu quand show nav est true, pour avoir une croix */
+  }
+}
