@@ -19,5 +19,8 @@
     "husky": "^7.0.0"
   },
   "dependencies": {
+    "eslint": "^8.13.0",
+    "prettier": "^2.6.2",
+    "react-img-mapper": "^1.4.0"
   }
 }
