@@ -1,0 +1,10 @@
+.videowrapper {
+  position: relative;
+  padding-top: 20%; /* 720 / 1280 = 0.5625 */
+}
+
+.autoplayvideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
