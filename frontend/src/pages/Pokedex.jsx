@@ -1,13 +1,13 @@
-import "../styles/Pokedex.css";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 import PokemonCard from "@components/PokemonCard";
 import Searchbar from "@components/Searchbar";
-// import pokemonDescription from "./PokemonDescription";
 
 import teamRocketball from "../assets/team-rocket ball.png";
 import pokedexImg from "../assets/pokedex.png";
+
+import "../styles/Pokedex.css";
 
 function Pokedex() {
   const [searchValue, setSearchValue] = useState("");

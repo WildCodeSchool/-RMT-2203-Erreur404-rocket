@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-// import PokemonCard from "@components/PokemonCard";
-// import PokemonDetail from "@components/PokemonDetail";
+
 import DescriptionCard from "@components/DescriptionCard";
 
 const pokemonDescription = () => {
