@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useParams } from "react-router-dom";
+// import PokemonCard from "@components/PokemonCard";
+// import PokemonDetail from "@components/PokemonDetail";
+import DescriptionCard from "@components/DescriptionCard";
 
 const pokemonDescription = () => {
+  const { pokedexnum } = useParams();
+  const [detail, setDetail] = useState({});
+
+  useEffect(() => {
+    axios
+      .get(`https://pokeapi.co/api/v2/pokemon/${pokedexnum}`)
+      .then((res) => setDetail(res.data));
+  }, []);
+
   return (
     <div>
-      <h1>Pokemon description</h1>
+      <DescriptionCard detail={detail} />
+      {/* <PokemonDetail /> */}
     </div>
   );
 };

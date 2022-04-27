@@ -42,7 +42,7 @@ a {
 }
 
 /* VARIABLES GLOBALES */
-* {
+body {
   background-color: var(--BackgroundColor);
 }
 
