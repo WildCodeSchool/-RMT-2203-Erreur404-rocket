@@ -1,7 +1,7 @@
 const ListEncounterAreaByPokemon = [
   {
     id: 0,
-    area: 0,
+    area: [0],
   },
   {
     id: 1,
@@ -13,7 +13,7 @@ const ListEncounterAreaByPokemon = [
   },
   {
     id: 3,
-    area: 0,
+    area: [0],
   },
   {
     id: 4,
@@ -25,7 +25,7 @@ const ListEncounterAreaByPokemon = [
   },
   {
     id: 6,
-    area: 0,
+    area: [0],
   },
   {
     id: 7,
@@ -37,11 +37,11 @@ const ListEncounterAreaByPokemon = [
   },
   {
     id: 9,
-    area: 3,
+    area: [3],
   },
   {
     id: 10,
-    area: 3,
+    area: [3],
   },
   {
     id: 11,
@@ -49,11 +49,11 @@ const ListEncounterAreaByPokemon = [
   },
   {
     id: 12,
-    area: 3,
+    area: [3],
   },
   {
     id: 13,
-    area: 3,
+    area: [3],
   },
   {
     id: 14,
@@ -61,11 +61,11 @@ const ListEncounterAreaByPokemon = [
   },
   {
     id: 15,
-    area: 2,
+    area: [2],
   },
   {
     id: 16,
-    area: 23,
+    area: [23],
   },
   {
     id: 17,
@@ -73,24 +73,26 @@ const ListEncounterAreaByPokemon = [
   },
   {
     id: 18,
-    area: 2,
+    area: [2],
   },
   {
     id: 19,
-    area: 26,
+    area: [26],
   },
   {
     id: 20,
-    area: 7,
+    area: [7],
   },
   {
     id: 21,
-    area: 26,
+    area: [26],
   },
   {
-    id: 0,
-    area: 0,
+    id: 22,
+    area: [8, 10],
   },
+  { id: 23, area: 9 },
+  { id: 24, area: [18] },
 ];
 
 export default ListEncounterAreaByPokemon;
