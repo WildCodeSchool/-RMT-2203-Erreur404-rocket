@@ -26,6 +26,7 @@ function Page404() {
       <Slide>
         <div className="partie2">
           <h2> Mais pas de panique, tu peux retenter ta chance!</h2>
+
           <img
             className="mongolfiere"
             src={rocketmongolfiere}

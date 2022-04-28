@@ -15,7 +15,7 @@ function Video() {
         loop
         muted
         width="100%"
-        height="100%"
+        height="200%"
       />
     </div>
   );
