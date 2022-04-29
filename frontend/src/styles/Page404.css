@@ -46,6 +46,10 @@ a {
 /* PAGE 404 */
 
 /* partie1 */
+.header, .hide-nav, .show-nav, .footer{
+  display: none;
+}
+
 .maincontainer {
   display: flex;
   flex-direction: column;
