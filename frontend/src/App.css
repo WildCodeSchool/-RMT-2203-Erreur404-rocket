@@ -40,3 +40,18 @@ a {
   list-style-type: none;
   text-decoration: none;
 }
+
+/* VARIABLES GLOBALES */
+body {
+  background-color: var(--BackgroundColor);
+}
+
+.colortest {
+  color: var(--MainColor);
+}
+.colortest1 {
+  color: var(--color2);
+}
+.colortest2 {
+  color: var(--color3);
+}

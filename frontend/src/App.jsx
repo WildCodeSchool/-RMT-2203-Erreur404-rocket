@@ -20,7 +20,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/Pokedex" element={<Pokedex />} />
-        <Route path="/Pokemon-description" element={<PokemonDescription />} />
+        <Route
+          path="/Pokemon-description/:pokedexnum/:name"
+          element={<PokemonDescription />}
+        />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Panier" element={<Panier />} />
         <Route path="/Carte" element={<Carte />} />
