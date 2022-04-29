@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Slide } from "react-awesome-reveal";
 
 import Video from "../components/Video";
@@ -9,6 +10,13 @@ import "../styles/Video.css";
 import "../styles/Page404.css";
 
 function Page404() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    setTimeout(() => {
+      navigate("/");
+    }, 5000);
+  }, []);
   return (
     <div className="maincontainer">
       <Video className="videoautoplay" />
