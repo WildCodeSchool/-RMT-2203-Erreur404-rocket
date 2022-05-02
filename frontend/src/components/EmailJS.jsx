@@ -9,9 +9,9 @@ export const EmailJS = () => {
 
     emailjs.sendForm('service_09irryu', 'template_tyu8t2f', form.current, 'DRRoxZ0G-QI1BDlKE')
       .then((result) => {
-          console.log(result.text);
+        console.warn(result.text);
       }, (error) => {
-          console.log(error.text);
+        console.error(error.text);
       });
   };
 
