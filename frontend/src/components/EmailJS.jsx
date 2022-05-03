@@ -33,9 +33,9 @@ const EmailJS = () => {
   });
 
   const onSubmit = (data, r) => {
-    alert('😀 Merci pour votre message, il sera traité au plus vite 😀');
-    const templateId = 'template_ca3dujb';
-    const serviceId = 'service_co7m6sq';
+    alert('Merci pour votre message, il sera traité au plus vite !');
+    const templateId = 'template_tyu8t2f';
+    const serviceId = 'service_09irryu';
     sendFeedback(serviceId, templateId, {
       name: data.name,
       phone: data.phone,
@@ -48,7 +48,7 @@ const EmailJS = () => {
 
   const sendFeedback = (serviceId, templateId, variables) => {
     emailjs
-      .send(serviceId, templateId, variables, 'd5d0D6g3LVE9sn3DN')
+      .send(serviceId, templateId, variables, 'DRRoxZ0G-QI1BDlKE')
       .then((res) => {
         console.log('succes');
       })
@@ -93,7 +93,7 @@ const EmailJS = () => {
             type="text"
             id="phone"
             nanme="phone"
-            placeholder="+12345678"
+            placeholder="+33 XXX XXX"
             {...register('phone')}
           />
           {errors.phone && <p id="c-yup">{errors.phone.message}</p>}
@@ -106,8 +106,8 @@ const EmailJS = () => {
             {...register('subject')}
           >
             <option selected>Selectionner l'objet de la demande</option>
-            <option value="devis">Devis</option>
-            <option value="questions">Questions</option>
+            <option value="Rejoindre la team rocket">Rejoindre la team rocket</option>
+            <option value="Rencontrer Giovanni">Rencontrer Giovanni</option>
             <option value="Autre">Autre</option>
           </select>
 
