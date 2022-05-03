@@ -11,15 +11,18 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "@hookform/resolvers": "^2.8.8",
     "axios": "^0.26.1",
     "emailjs": "^4.0.0",
     "emailjs-com": "^3.2.0",
     "react": "^17.0.2",
     "react-awesome-reveal": "^3.8.1",
     "react-dom": "^17.0.2",
+    "react-hook-form": "^7.30.0",
     "react-img-mapper": "^1.4.0",
     "react-router-dom": "^6.3.0",
-    "template-fullstack": "file:.."
+    "template-fullstack": "file:..",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",

@@ -174,15 +174,21 @@ a {
 
 /* Contact Formulaire */
 
+
+.contactForm textarea {
+  width: 95%;
+  padding: 4%;
+}
+
 .contactForm {
-  padding: 50px;
-  width: 500px;
-  max-width: 550px;
+  padding: 40px;
+  width: 90%;
+  max-width: 100%;
   margin: 5px;
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   background-color: var(--color3);
 }
 
@@ -192,18 +198,15 @@ a {
 }
 
 .contactForm input,
-button,
-textarea {
-  height: 50px;
+textarea, button {
+  height: 100%;
+  width: 95%;
   padding-left: 5px;
   font-size: 18px;
   border-radius: 10px;
   border-style: none;
 }
 
-.contactForm button {
-  background-color: var(--color2);
-}
 
 .contactForm button:hover {
   background-color: rgb(97, 2, 2);
@@ -216,7 +219,7 @@ textarea {
 }
 
 .contactForm textarea {
-  height: 110px;
+  height: 80%;
 }
 
 .h1contact {
