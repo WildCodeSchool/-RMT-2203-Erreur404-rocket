@@ -1,0 +1,561 @@
+/* RESET */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --title-font: "Reem Kufi", sans-serif;
+  --title-size: 48px;
+  --text-font: "Overpass", sans-serif;
+  --text-size: 16px;
+  --main-line-lenght: 25ch;
+  line-height: 1.5;
+  box-sizing: border-box;
+  letter-spacing: 0.1rem;
+
+  --BackgroundColor: #0f1b1e;
+  --MainColor: #3e3d7b;
+  --color2: #a21a10;
+  --color3: #f7f7ff;
+  --border-radius: 18px;
+  --box-shadow: 0 3px 7px var(--MainColor);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--title-font);
+  font-weight: 500;
+  /* ou 700 en bold */
+}
+
+p {
+  font-family: var(--text-font);
+  font-weight: 500;
+  /* 700 possible en bold */
+}
+
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* VARIABLES GLOBALES */
+* .colortest {
+  color: var(--MainColor);
+}
+
+.colortest1 {
+  color: var(--color2);
+}
+
+.colortest2 {
+  color: var(--color3);
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+}
+.row h1,
+.row p {
+  text-align: center;
+}
+.row-col-1 {
+  width: 45%;
+}
+.divcontact {
+  width: 45%;
+}
+
+.rocketimg {
+  border-radius: var(--border-radius);
+  width: 50%;
+}
+
+.rocketimg:hover {
+  color: #3e3d7b;
+}
+
+.comeus {
+  color: var(--color2);
+  font-size: 3.5rem;
+}
+
+.whyrejoinus {
+  color: var(--color3);
+  font-size: 1.4rem;
+  padding-top: 6%;
+}
+
+.whyrejoinus2 {
+  color: var(--color3);
+  font-size: 1.4rem;
+  margin-top: 7%;
+}
+
+.jjimg {
+  width: 65%;
+  padding-top: 5%;
+}
+.css-1dxe8h0 {
+  width: 100%;
+}
+
+/* ContactForm JSX */
+
+.rocketmobile {
+  display: none;
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  margin-top: 3%;
+  width: 100%;
+  padding-bottom: 5rem;
+}
+
+.contactus {
+  color: var(--color2);
+  font-size: 4rem;
+  padding-top: 4%;
+}
+
+.adress {
+  color: var(--color3);
+  padding-top: 7%;
+  font-size: 1.3rem;
+}
+
+.p1 {
+  color: var(--color3);
+  padding-top: 7%;
+}
+
+.p2 {
+  color: var(--color3);
+  padding-top: 7%;
+  font-size: 1.2rem;
+}
+
+.jassie {
+  width: 25%;
+}
+
+.contacth1 {
+  color: var(--color3);
+}
+
+.pika {
+  width: 40%;
+  padding-bottom: 1rem;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */
+}
+
+.pikamobile {
+  display: none;
+}
+
+/* Contact Formulaire */
+
+.input-contact {
+  font-size: 1rem;
+  padding: 3%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.message-contact {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.label-contact {
+  font-family: var(--text-font);
+}
+
+.button-contact {
+  background-color: var(--color2);
+  padding: 1.5%;
+}
+
+.message-contact {
+  height: 150px;
+  resize: none;
+}
+
+.select-contact {
+  background-color: var(--color3);
+  padding: 1.5%;
+  border-radius:var(--border-radius)
+}
+
+.contactForm {
+  padding: 50px;
+  width: 100%;
+  max-width: 150%;
+  margin: auto;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--color3);
+}
+
+.contactForm:hover {
+  color: var(--color2);
+  transition: 200ms;
+}
+
+.contactForm button {
+  border-radius: var(--border-radius);
+}
+
+.contactForm input,
+textarea, button {
+  height: 100%;
+  width: 100%;
+  padding-left: 3px;
+  font-size: 18px;
+  border-radius: 1px;
+  border-style: none;
+}
+
+
+.contactForm button:hover {
+  background-color: rgb(97, 2, 2);
+  transition: 1000ms;
+}
+
+.contactForm input,
+textarea {
+  background-color: rgb(240, 240, 240);
+}
+
+
+.h1contact {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color3);
+  margin-bottom: 18px;
+}
+
+.formcontact1 {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pcontact {
+  color: var(--color3);
+  font-size: 1.2rem;
+}
+
+.linkStyle {
+  display: flex;
+  background: none;
+}
+
+.pokeball {
+  width: 35%;
+  display: flex;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.pokeball:hover {
+  animation: ballEffect 2.5s;
+}
+
+@keyframes ballEffect {
+  100% {
+    transform: rotate(1800deg) translate(0.45px);
+  }
+}
+.row2 {
+  width: 45%;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  /* SEPARATEUR RECCURENT */
+
+  .separation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0 10rem 0;
+  }
+  .separateur {
+    margin: 0 2rem;
+    height: 5px;
+    border: none;
+    border-radius: var(--border-radius);
+    width: 30vw;
+    background-color: var(--color2);
+  }
+  .rocketball {
+    width: 60px;
+  }
+  /*  FIN SEPARATEUR RECCURENT */
+  .rocketimg {
+    display: none;
+  }
+  .css-1dxe8h0 {
+    width: 100%;
+  }
+  .row-col-1 {
+    width: 100%;
+  }
+  .css-2qfv45 {
+    width: 100%;
+  }
+  .comeus {
+    display: flex;
+    justify-content: center;
+  }
+
+  .whyrejoinus {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .whyrejoinus2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 16px;
+    font-size: 1.2rem;
+  }
+
+  img.pika {
+    display: none;
+  }
+  .divcontact {
+    width: 100%;
+  }
+
+  .pikamobile {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE (non-standard property) */
+  }
+
+  .contactus {
+    margin-right: none;
+    text-align: center;
+  }
+
+  .adress {
+    margin: auto;
+    text-align: center;
+  }
+
+  .p2 {
+    display: none;
+  }
+
+  .pokeball {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10%;
+  }
+  .css-2qfv45 {
+    width: 100%;
+  }
+  .rocketmobile {
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    border-radius: var(--border-radius);
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .formcontact1 {
+    flex-direction: column-reverse;
+  }
+
+  .row1 {
+    flex-direction: column-reverse;
+  }
+
+  .row2 {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .contactForm {
+    margin-top: 6%;
+    max-width: 80%;
+  }
+}
+/* Media Query Mobile */
+
+@media screen and (max-width: 767px) {
+  /* SEPARATEUR RECCURENT */
+
+  .separation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0 10rem 0;
+  }
+  .separateur {
+    margin: 0 2rem;
+    height: 5px;
+    border: none;
+    border-radius: var(--border-radius);
+    width: 30vw;
+    background-color: var(--color2);
+  }
+  .rocketball {
+    width: 60px;
+  }
+  /*  FIN SEPARATEUR RECCURENT */
+  .rocketimg {
+    display: none;
+  }
+  .divcontact {
+    width: 100%;
+  }
+  .row-col-1 {
+    width: 100%;
+  }
+  .row2 {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .css-1dxe8h0 {
+    width: 100%;
+  }
+  .comeus {
+    display: flex;
+    justify-content: center;
+  }
+  .contactus {
+    text-align: center;
+  }
+  .whyrejoinus {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .whyrejoinus2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 16px;
+    font-size: 1.2rem;
+  }
+
+  img.pika {
+    display: none;
+  }
+
+  .pikamobile {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    /* Ajout d'un margin right car le margin auto le centre presque correctement par rapport
+    au formcontact mais pas assez à mon gout */
+    margin-right: 37%;
+  }
+
+  .contactus {
+    display: flex;
+    justify-content: center;
+    margin-right: none;
+  }
+
+  .adress {
+    margin: auto;
+  }
+
+  .p2 {
+    display: none;
+  }
+
+  .pokeball {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin: auto;
+    margin-top: 6%;
+  }
+
+  .rocketmobile {
+    display: flex;
+
+    margin-top: 5%;
+    width: 100%;
+    border-radius: var(--border-radius);
+  }
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .formcontact1 {
+    flex-direction: column-reverse;
+  }
+
+  .row1 {
+    flex-direction: column-reverse;
+  }
+
+  .row2 {
+    flex-direction: column;
+    margin: auto;
+  }
+  .contactForm {
+    margin-top: 6%;
+    max-width: 65%;
+  }
+  .adress {
+    text-align: center;
+  }
+}
+
+/* Media Query Tablette */
+
+/* Small Laptop Screen */
+/* Sorry Pika */
+
+@media screen and (min-width: 1025px) and (max-width: 1350px) {
+  .pika {
+    display: none;
+  }
+}
