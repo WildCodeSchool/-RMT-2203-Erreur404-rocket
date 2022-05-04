@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function NavBar(showMenu, setShowMenu) {
+function NavBar({ showMenu, setShowMenu }) {
   return (
     <ul>
       <NavLink to="/" onClick={() => setShowMenu(!showMenu)}>

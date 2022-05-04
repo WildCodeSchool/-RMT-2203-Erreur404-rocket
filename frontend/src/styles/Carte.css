@@ -1,9 +1,9 @@
-body{
-    display: block;
+body {
+  display: block;
 }
-.mapContainer{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.mapContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
