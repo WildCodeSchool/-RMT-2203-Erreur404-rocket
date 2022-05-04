@@ -28,7 +28,6 @@ function Header() {
       </button>
       <div className="menuWrapper">
         <NavBar />
-        <div className="banneer-container" />
       </div>
     </div>
   );
