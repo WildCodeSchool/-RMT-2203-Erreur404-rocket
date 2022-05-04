@@ -21,7 +21,7 @@ width:100%;
   display: flex;
   justify-content: space-evenly ;
   flex-wrap: wrap;
-  width: 100%;
+  width: 70%;
   align-items: center;
 
 }
@@ -49,18 +49,13 @@ width:100%;
   margin-bottom: 5rem;
 }
 .card-pokemon-container img {
-  width:200px;
+  width:150px;
   padding: 5px;
   border-radius: 100%;
   background-color: var(--MainColor);
   margin: 1rem;
 }
 
-.low-section {
-  width:100%;
-  justify-content: space-around;
-  
-}
 
 .jessie-alone {
   width:280px;
@@ -80,6 +75,9 @@ width:100%;
   flex-direction:  row;
   justify-content: space-around;
   margin-bottom: 5rem;
+}
+.title-map{
+  font-size: 5rem;
 }
 @media screen and (max-width: 1025px){
   .img-flex{

@@ -12,8 +12,9 @@ import "../styles/Carte.css";
 function Carte() {
   return (
     <div>
+      <div className="banneer-container" />
       <div className="mapContainer">
-        <h1>Carte</h1>
+        <h1 className="title-map">Carte</h1>
 
         <div className="separation">
           <hr className="separateur" />
