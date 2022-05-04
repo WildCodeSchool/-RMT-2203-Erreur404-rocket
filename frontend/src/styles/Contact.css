@@ -105,7 +105,7 @@ a {
   padding-top: 5%;
 }
 .css-1dxe8h0 {
-  width: 45%;
+  width: 100%;
 }
 
 /* ContactForm JSX */
@@ -116,7 +116,7 @@ a {
 
 .row1 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: row-reverse;
   margin-top: 3%;
   width: 100%;
@@ -174,17 +174,41 @@ a {
 
 /* Contact Formulaire */
 
+.input-contact {
+  font-size: 1rem;
+  padding: 3%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-.contactForm textarea {
-  width: 95%;
-  padding: 4%;
+.message-contact {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.label-contact {
+  font-family: var(--text-font);
+}
+
+.button-contact {
+  background-color: var(--color2);
+  padding: 1.5%;
+}
+
+.message-contact {
+  height: 150px;
+  resize: none;
+}
+
+.select-contact {
+  background-color: var(--color3);
+  padding: 1.5%;
+  border-radius:var(--border-radius)
 }
 
 .contactForm {
-  padding: 40px;
-  width: 90%;
-  max-width: 100%;
-  margin: 5px;
+  padding: 50px;
+  width: 100%;
+  max-width: 150%;
+  margin: auto;
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
@@ -197,13 +221,17 @@ a {
   transition: 200ms;
 }
 
+.contactForm button {
+  border-radius: var(--border-radius);
+}
+
 .contactForm input,
 textarea, button {
   height: 100%;
-  width: 95%;
-  padding-left: 5px;
+  width: 100%;
+  padding-left: 3px;
   font-size: 18px;
-  border-radius: 10px;
+  border-radius: 1px;
   border-style: none;
 }
 
@@ -218,9 +246,6 @@ textarea {
   background-color: rgb(240, 240, 240);
 }
 
-.contactForm textarea {
-  height: 80%;
-}
 
 .h1contact {
   display: flex;
@@ -239,10 +264,7 @@ textarea {
 
 .pcontact {
   color: var(--color3);
-  background: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 1.2rem;
 }
 
 .linkStyle {

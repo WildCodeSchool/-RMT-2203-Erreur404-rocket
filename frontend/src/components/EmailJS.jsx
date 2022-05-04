@@ -1,6 +1,10 @@
 import React from 'react';
+ 
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+
+import { Bounce } from 'react-awesome-reveal';
+ 
 import * as yup from 'yup';
 import emailjs from '@emailjs/browser';
 
@@ -41,6 +45,7 @@ const EmailJS = () => {
       phone: data.phone,
       email: data.email,
       subject: data.subject,
+      city: data.city,
       message: data.message,
       reply_to: r.target.reset(),
     });
@@ -56,12 +61,11 @@ const EmailJS = () => {
   };
 
   return (
+    <Bounce>
     <div>
-      <h1 className="h1-contact">Formulaire de Contact</h1>
-
       <form className="contactForm" onSubmit={handleSubmit(onSubmit)}>
-        <div className="form-content">
-          <label htmlfor="name" className="label-contact">
+      <h1 className="h1contact">N&apos;attends plus</h1>
+          <label htmlFor="name" className="label-contact">
             Nom et Prenom :
           </label>
           <input
@@ -69,11 +73,11 @@ const EmailJS = () => {
             type="text"
             id="name"
             nanme="name"
-            placeholder="Nom et Prenom"
+            placeholder="Renseignez votre nom et prénom"
             {...register('name')}
           />
           {errors.name && <p id="c-yup">{errors.name.message}</p>}
-          <label htmlfor="email" className="label-contact">
+          <label htmlFor="email" className="label-contact">
             Adresse mail :
           </label>
           <input
@@ -85,7 +89,7 @@ const EmailJS = () => {
             {...register('email')}
           />
           {errors.email && <p id="c-yup">{errors.email.message}</p>}
-          <label htmlfor="phone" className="label-contact">
+          <label htmlFor="phone" className="label-contact">
             N° Téléphone :
           </label>
           <input
@@ -97,8 +101,8 @@ const EmailJS = () => {
             {...register('phone')}
           />
           {errors.phone && <p id="c-yup">{errors.phone.message}</p>}
-          <label for="Sujet" className="label-contact">
-            Sujet:
+          <label htmlFor="Sujet" className="label-contact">
+            Sujet :
           </label>
           <select
             className="select-contact"
@@ -111,13 +115,36 @@ const EmailJS = () => {
             <option value="Autre">Autre</option>
           </select>
 
-          <label htmlfor="message" className="label-contact">
+          <label htmlFor="Ville" className="label-contact">
+            Votre ville :
+          </label>
+          <select
+            className="select-contact"
+            name="City"
+            {...register('city')}
+          >
+            <option selected>Selectionner votre ville</option>
+            <option value="Jadielle">Jadielle</option>
+            <option value="Argenta">Argenta</option>
+            <option value="Parmanie">Parmanie</option>
+            <option value="Autéquia">Autéquia</option>
+            <option value="Atalanopolis">Atalanopolis</option>
+            <option value="Éternara">Éternara</option>
+            <option value="Pacifiville">Pacifiville</option>
+            <option value="Mauville">Mauville</option>
+            <option value="Écorcia">Écorcia</option>
+            <option value="Irisia">Irisia</option>
+            <option value="Autre">Autre</option>
+          </select>
+          
+
+          <label htmlFor="message" className="label-contact">
             {' '}
             Message :
           </label>
           <textarea
             className="message-contact"
-            placeholder="Merci de renseigner vos questions ou commentaires"
+            placeholder="On espère que cela sera constructif"
             id="message"
             cols="20"
             rows="10"
@@ -125,17 +152,13 @@ const EmailJS = () => {
             {...register('message')}
           ></textarea>
           {errors.message && <p id="c-yup">{errors.message.message}</p>}
-          <label htmlFor="checkbox" className="label-contact">
-            <input type="checkbox" /> En cochant cette case, j'accepte de
-            recevoir des informations sur les différentes offres disponibles.
-          </label>
 
           <button className="button-contact" type="Submit" value="Envoyer">
-            Envoyer
+            <p className="pcontact">Je contacte la team rocket ! </p>
           </button>
-        </div>
       </form>
     </div>
+    </Bounce>
   );
 };
 
