@@ -1,6 +1,6 @@
 const areaSelected = [
   {
-    id: "0",
+    id: 0,
     title: "Pallet Town",
     shape: "rect",
     name: "Pallet Town",
@@ -11,7 +11,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "1",
+    id: 1,
     title: "Road 1",
     shape: "rect",
     name: "Road 1",
@@ -22,7 +22,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "2",
+    id: 2,
     title: "Road 2 part 1",
     shape: "rect",
     name: "Road 2 part 1",
@@ -33,7 +33,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "3",
+    id: 3,
     title: "Viridian Forest",
     shape: "circle",
     name: "Viridian Forest",
@@ -44,7 +44,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "4",
+    id: 4,
     title: "Diglett's Cave",
     shape: "circle",
     name: "Diglett's Cave",
@@ -55,7 +55,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "5",
+    id: 5,
     title: "Road 2 part 2",
     shape: "rect",
     name: "Road 2 part 2",
@@ -66,7 +66,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "6",
+    id: 6,
     title: "Pewter City",
     shape: "rect",
     name: "Pewter City",
@@ -77,7 +77,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "7",
+    id: 7,
     title: "Road 3",
     shape: "rect",
     name: "Road 3",
@@ -88,7 +88,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "8",
+    id: 8,
     title: "Road 4 part 1",
     shape: "poly",
     name: "Road 4 part 1",
@@ -108,7 +108,7 @@ const areaSelected = [
     ],
   },
   {
-    id: "9",
+    id: 9,
     title: "Mount Moon",
     shape: "circle",
     name: "Mount Moon",
@@ -119,7 +119,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "10",
+    id: 10,
     title: "Road 4 part 2",
     shape: "rect",
     name: "Road 4 part 2",
@@ -131,7 +131,7 @@ const areaSelected = [
     disabled: false,
   },
   {
-    id: "11",
+    id: 11,
     title: "Road 5",
     shape: "rect",
     name: "Road 5",
@@ -141,7 +141,7 @@ const areaSelected = [
     coords: [385, 104, 404, 170],
   },
   {
-    id: "12",
+    id: 12,
     title: "Road 6",
     shape: "rect",
     name: "Road 6",
@@ -151,7 +151,7 @@ const areaSelected = [
     coords: [385, 205, 404, 306],
   },
   {
-    id: "13",
+    id: 13,
     title: "Road 7",
     shape: "rect",
     name: "Road 7",
@@ -161,7 +161,7 @@ const areaSelected = [
     coords: [311, 180, 378, 197],
   },
   {
-    id: "14",
+    id: 14,
     title: "Road 8",
     shape: "rect",
     name: "Road 8",
@@ -171,7 +171,7 @@ const areaSelected = [
     coords: [412, 180, 515, 197],
   },
   {
-    id: "15",
+    id: 15,
     title: "Road 9",
     shape: "rect",
     name: "Road 9",
@@ -181,7 +181,7 @@ const areaSelected = [
     coords: [412, 75, 522, 94],
   },
   {
-    id: "16",
+    id: 16,
     title: "Road 10 part 1",
     shape: "rect",
     name: "Road 10 part 1",
@@ -191,7 +191,7 @@ const areaSelected = [
     coords: [522, 75, 540, 103],
   },
   {
-    id: "17",
+    id: 17,
     title: "Rock Tunnel",
     shape: "circle",
     name: "Rock Tunnel",
@@ -202,7 +202,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "18",
+    id: 18,
     title: "Power Plant",
     shape: "circle",
     name: "Power Plant",
@@ -213,7 +213,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "19",
+    id: 19,
     title: "Road 10 part 2",
     shape: "rect",
     name: "Road 10 part 2",
@@ -223,7 +223,7 @@ const areaSelected = [
     coords: [522, 138, 540, 170],
   },
   {
-    id: "20",
+    id: 20,
     title: "Road 11",
     shape: "rect",
     name: "Road 11",
@@ -233,7 +233,7 @@ const areaSelected = [
     coords: [412, 316, 522, 333],
   },
   {
-    id: "21",
+    id: 21,
     title: "Road 12",
     shape: "rect",
     name: "Road 12",
@@ -243,7 +243,7 @@ const areaSelected = [
     coords: [522, 205, 540, 383],
   },
   {
-    id: "22",
+    id: 22,
     title: "Road 13",
     shape: "rect",
     name: "Road 13",
@@ -253,7 +253,7 @@ const areaSelected = [
     coords: [438, 384, 540, 401],
   },
   {
-    id: "23",
+    id: 23,
     title: "Road 14",
     shape: "rect",
     name: "Road 14",
@@ -263,7 +263,7 @@ const areaSelected = [
     coords: [420, 384, 437, 469],
   },
   {
-    id: "24",
+    id: 24,
     title: "Road 15",
     shape: "rect",
     name: "Road 15",
@@ -273,7 +273,7 @@ const areaSelected = [
     coords: [344, 452, 419, 469],
   },
   {
-    id: "25",
+    id: 25,
     title: "Road 16",
     shape: "rect",
     name: "Road 16",
@@ -283,7 +283,7 @@ const areaSelected = [
     coords: [181, 180, 275, 197],
   },
   {
-    id: "26",
+    id: 26,
     title: "Road 17",
     shape: "rect",
     name: "Road 17",
@@ -293,7 +293,7 @@ const areaSelected = [
     coords: [181, 198, 199, 451],
   },
   {
-    id: "27",
+    id: 27,
     title: "Road 18",
     shape: "rect",
     name: "Road 18",
@@ -303,7 +303,7 @@ const areaSelected = [
     coords: [181, 452, 310, 470],
   },
   {
-    id: "28",
+    id: 28,
     title: "Raod 19",
     shape: "rect",
     name: "Road 19",
@@ -313,7 +313,7 @@ const areaSelected = [
     coords: [318, 478, 335, 537],
   },
   {
-    id: "29",
+    id: 29,
     title: "Raod 20 part 1",
     shape: "rect",
     name: "Road 20 part 1",
@@ -323,7 +323,7 @@ const areaSelected = [
     coords: [240, 521, 317, 537],
   },
   {
-    id: "30",
+    id: 30,
     title: "Seafoam Islands",
     shape: "circle",
     name: "Seafoam Islands",
@@ -334,7 +334,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "31",
+    id: 31,
     title: "Raod 20 part 2",
     shape: "rect",
     name: "Road 20 part 2",
@@ -344,7 +344,7 @@ const areaSelected = [
     coords: [140, 521, 208, 537],
   },
   {
-    id: "32",
+    id: 32,
     title: "Road 21",
     shape: "rect",
     name: "Road 21",
@@ -355,7 +355,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "33",
+    id: 33,
     title: "Road 22",
     shape: "rect",
     name: "Road 22",
@@ -366,7 +366,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "34",
+    id: 34,
     title: "Road 23 part 1",
     shape: "rect",
     name: "Road 23 part 1",
@@ -377,7 +377,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "35",
+    id: 35,
     title: "Victory Road",
     shape: "circle",
     name: "Victory Road",
@@ -388,7 +388,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "36",
+    id: 36,
     title: "Road 23 part 2",
     shape: "rect",
     name: "Road 23 part 2",
@@ -399,7 +399,7 @@ const areaSelected = [
     active: true,
   },
   {
-    id: "37",
+    id: 37,
     title: "Road 24",
     shape: "rect",
     name: "Road 24",
@@ -409,7 +409,7 @@ const areaSelected = [
     coords: [385, 9, 404, 68],
   },
   {
-    id: "38",
+    id: 38,
     title: "Road 25",
     shape: "rect",
     name: "Road 25",
@@ -417,6 +417,76 @@ const areaSelected = [
     preFillColor: "#CD5C5C",
     strokeColor: "black",
     coords: [405, 9, 468, 26],
+  },
+  {
+    id: 39,
+    title: "Unknown Dungeon",
+    shape: "rect",
+    name: "Unknown Dungeon",
+    fillColor: "#3e3d7b",
+    preFillColor: "#3e3d7b",
+    strokeColor: "black",
+    coords: [382, 72, 407, 98],
+  },
+  {
+    id: 40,
+    title: "Safari Park",
+    shape: "rect",
+    name: "Safari Park",
+    fillColor: "#3e3d7b",
+    preFillColor: "#3e3d7b",
+    strokeColor: "black",
+    coords: [314, 448, 340, 474],
+  },
+  {
+    id: 41,
+    title: "Cinnabar Island",
+    shape: "rect",
+    name: "Cinnabar Island",
+    fillColor: "#3e3d7b",
+    preFillColor: "#3e3d7b",
+    strokeColor: "black",
+    coords: [110, 516, 135, 542],
+  },
+  {
+    id: 42,
+    title: "Lavender Town",
+    shape: "rect",
+    name: "Lavender Town",
+    fillColor: "#3e3d7b",
+    preFillColor: "#3e3d7b",
+    strokeColor: "black",
+    coords: [518, 176, 543, 201],
+  },
+  {
+    id: 43,
+    title: "Fighting Dojo",
+    shape: "rect",
+    name: "Fighting Dojo",
+    fillColor: "#3e3d7b",
+    preFillColor: "#3e3d7b",
+    strokeColor: "black",
+    coords: [382, 176, 407, 201],
+  },
+  {
+    id: 44,
+    title: "Vermillon City",
+    shape: "rect",
+    name: "Vermillon City",
+    fillColor: "#3e3d7b",
+    preFillColor: "#3e3d7b",
+    strokeColor: "black",
+    coords: [382, 310, 407, 337],
+  },
+  {
+    id: 45,
+    title: "Celadon City",
+    shape: "rect",
+    name: "Celadon City",
+    fillColor: "#3e3d7b",
+    preFillColor: "#3e3d7b",
+    strokeColor: "black",
+    coords: [280, 176, 305, 201],
   },
 ];
 
