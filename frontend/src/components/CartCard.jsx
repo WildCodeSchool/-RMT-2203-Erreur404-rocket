@@ -1,11 +1,6 @@
 import React from "react";
 
-function CartCard({ pokemon, monPanier, setMonPanier }) {
-  const deletePokemon = () => {
-    const poke = monPanier.filter((el) => el.pokedexnum !== pokemon.pokedexnum);
-    setMonPanier(poke);
-  };
-
+function CartCard({ pokemon, deletePokemon }) {
   return (
     <div className="pokemoncart-wrapper">
       <div className="pokemoncart-name">{pokemon.name}</div>
@@ -14,7 +9,11 @@ function CartCard({ pokemon, monPanier, setMonPanier }) {
         src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.pokedexnum}.svg`}
         alt={pokemon.name}
       />
-      <button className="btn-delete" type="button" onClick={deletePokemon}>
+      <button
+        className="btn-delete"
+        type="button"
+        onClick={() => deletePokemon(pokemon.pokedexnum)}
+      >
         Supprimer
       </button>
     </div>

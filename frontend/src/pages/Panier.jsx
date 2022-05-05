@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import CartCard from "@components/CartCard";
-import Separateur from "@components/Separateur";
+import Séparateur from "@components/Séparateur";
 import pokemonSelected from "../data/pokemonSelected";
 
 import PokemonInJail from "../assets/cage-pkm.png";
@@ -12,13 +12,17 @@ import "../styles/Panier.css";
 
 function Panier() {
   const [monPanier, setMonPanier] = useState(pokemonSelected);
+  const deletePokemon = (pokedexnum) => {
+    const poke = monPanier.filter((el) => el.pokedexnum !== pokedexnum);
+    setMonPanier(poke);
+  };
   return (
     <div>
       <div className="panier-title">
         <h1 className="cart">La cage pour le Boss</h1>
         <div />
       </div>
-      <Separateur />
+      <Séparateur />
       <section className="section01">
         <img className="pokemoninjail" src={PokemonInJail} alt="Prison" />
         <div className="paniertext">
@@ -31,7 +35,7 @@ function Panier() {
           </p>
         </div>
       </section>
-      <Separateur />
+      <Séparateur />
       <section className="section02">
         <div className="Pokedex-wrapper">
           <ul>
@@ -40,8 +44,7 @@ function Panier() {
                 <CartCard
                   key={pokemon.pokedexnum}
                   pokemon={pokemon}
-                  monPanier={monPanier}
-                  setMonPanier={setMonPanier}
+                  deletePokemon={deletePokemon}
                 />
               ))}
           </ul>
