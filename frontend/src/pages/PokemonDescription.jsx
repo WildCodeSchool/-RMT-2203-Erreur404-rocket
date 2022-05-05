@@ -8,12 +8,12 @@ import DescriptionCard from "../components/DescriptionCard";
 import "../styles/PokemonDescription.css";
 
 function PokemonDescription() {
-  const { pokedexnum } = useParams(); // on declare les variables de l'url dynamique du lien dans pokedex ICI.
-  const [detail, setDetail] = useState({}); // feetch de l'api pour chaque pokemon : ici ce n'est pas un tableau vide mais un objet vide.
+  const { pokedexnum } = useParams();
+  const [detail, setDetail] = useState({});
 
   useEffect(() => {
     axios
-      .get(`https://pokeapi.co/api/v2/pokemon/${pokedexnum}`) // on fetch uniquement les pokémon qui correspondent au bouton sur lequel on a cliqué,  dans pokedex , en ajoutant le useparam.
+      .get(`https://pokeapi.co/api/v2/pokemon/${pokedexnum}`)
 
       .then((res) => setDetail(res.data));
   }, []);
@@ -22,14 +22,9 @@ function PokemonDescription() {
       <DescriptionCard detail={detail} />
       <PokemonDetail />
       <div className="box-btn-home-panier">
-        <NavLink to="/home" className="btn-pkm-home">
+        <NavLink to="/pokedex" className="btn-pkm-home">
           Retourner au Pokedex
         </NavLink>
-        {/* <NavLink to={`/home`} >
-        <button className="btn-pkm-panier">
-            Ajouter au panier
-        </button>
-        </NavLink> */}
       </div>
     </div>
   );

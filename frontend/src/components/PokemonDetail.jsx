@@ -5,10 +5,10 @@ import "../styles/PokemonDescription.css";
 
 function PokemonDetail() {
   const { pokedexnum } = useParams();
-  const [moredetail, setMoredetail] = useState({}); // feetch de l'api pour chaque pokemon : ici ce n'est pas un tableau vide mais un objet vide.
+  const [moredetail, setMoredetail] = useState({});
   useEffect(() => {
     axios
-      .get(`https://pokeapi.co/api/v2/pokemon-species/${pokedexnum}/`) // on fetch uniquement les pokémon qui correspondent au bouton sur lequel on a cliqué,  dans pokedex , en ajoutant le useparam.
+      .get(`https://pokeapi.co/api/v2/pokemon-species/${pokedexnum}/`)
 
       .then((res) => setMoredetail(res.data));
   }, []);
@@ -18,7 +18,13 @@ function PokemonDetail() {
       <div className="pkm-more-details-capt-descrip-habit-text">
         <div className="pkm-detail-capture">
           <h2>Capture rate :</h2>
-          <p>{Math.round((moredetail.capture_rate * 100) / 255) + 10} %</p>
+          <p>
+            {Math.min(
+              100,
+              Math.round((moredetail.capture_rate * 100) / 255) + 10
+            )}
+            %
+          </p>
         </div>
         <div className="pkm-detail-description">
           <h2>Description :</h2>
@@ -38,8 +44,7 @@ function PokemonDetail() {
           <div className="img-pkm-evolution">
             <h2>Evolution de : </h2>{" "}
             <span className="img-pkm-evolution-name">
-              {moredetail.evolves_from_species &&
-                moredetail.evolves_from_species.name}
+              {moredetail.evolves_from_species.name}
             </span>
             <img
               src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${
