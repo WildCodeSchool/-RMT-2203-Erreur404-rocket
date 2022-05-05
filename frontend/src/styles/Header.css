@@ -113,7 +113,7 @@ html {
 
 .banneer-container {
   height: 400px;
-  width: 100vw;
+  width: 100%;
   background-image: url(../assets/team-rocket-complete.jpg);
   background-position: bottom;
   background-size: cover;

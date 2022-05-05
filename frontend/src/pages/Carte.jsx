@@ -6,13 +6,14 @@ import pokemonSelected from "../data/pokemonSelected";
 import MapCard from "../components/MapCard";
 import jessie from "../assets/jessie-alone2.png";
 import james from "../assets/james-alone.png";
+import Bannière from "../components/Bannière";
 
 import "../styles/Carte.css";
 
 function Carte() {
   return (
     <div>
-      <div className="banneer-container" />
+      <Bannière />
       <div className="mapContainer">
         <h1 className="title-map">Carte</h1>
 

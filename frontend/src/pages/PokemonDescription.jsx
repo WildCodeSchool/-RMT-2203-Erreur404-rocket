@@ -17,7 +17,6 @@ const pokemonDescription = () => {
   return (
     <div>
       <DescriptionCard detail={detail} />
-      {/* <PokemonDetail /> */}
     </div>
   );
 };
