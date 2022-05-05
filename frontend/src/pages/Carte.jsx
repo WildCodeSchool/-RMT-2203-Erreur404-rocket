@@ -1,9 +1,9 @@
 import React from "react";
 import Mapper from "@components/Mapper";
 
+import Séparateur from "../components/Séparateur";
 import pokemonSelected from "../data/pokemonSelected";
 import MapCard from "../components/MapCard";
-import teamRocketball from "../assets/team-rocket ball.png";
 import jessie from "../assets/jessie-alone2.png";
 import james from "../assets/james-alone.png";
 
@@ -16,11 +16,7 @@ function Carte() {
       <div className="mapContainer">
         <h1 className="title-map">Carte</h1>
 
-        <div className="separation">
-          <hr className="separateur" />
-          <img className="rocketball" src={teamRocketball} alt="rocketball" />
-          <hr className="separateur" />
-        </div>
+        <Séparateur />
 
         <div className="flex-map-container">
           <div className="img-flex">
