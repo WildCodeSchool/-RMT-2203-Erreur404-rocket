@@ -42,7 +42,6 @@ function Pokedex() {
           <img src={pokedexImg} alt="pokedex" />
         </div>
       </section>
-
       <div className="separation">
         <hr className="separateur" />
         <img className="rocketball" src={teamRocketball} alt="rocketball" />

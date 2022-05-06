@@ -9,7 +9,6 @@ function PokemonDetail() {
   useEffect(() => {
     axios
       .get(`https://pokeapi.co/api/v2/pokemon-species/${pokedexnum}/`)
-
       .then((res) => setMoredetail(res.data));
   }, []);
 
@@ -35,14 +34,13 @@ function PokemonDetail() {
         </div>
         <div className="pkm-detail-habitat">
           <h2>Habitat Naturel :</h2>
-          <p> {moredetail.habitat && moredetail.habitat.name}</p>
+          <p> {moredetail.habitat?.name}</p>
         </div>
       </div>
       <div className="pkm-evolution">
-        {moredetail.evolves_from_species &&
-        moredetail.evolves_from_species.name != null ? (
+        {moredetail.evolves_from_species?.name != null && (
           <div className="img-pkm-evolution">
-            <h2>Evolution de : </h2>{" "}
+            <h2>Evolution de : </h2>
             <span className="img-pkm-evolution-name">
               {moredetail.evolves_from_species.name}
             </span>
@@ -51,10 +49,8 @@ function PokemonDetail() {
                 moredetail.id - 1
               }.png`}
               alt={`pokemon number ${moredetail.id}`}
-            />{" "}
+            />
           </div>
-        ) : (
-          ""
         )}
       </div>
     </div>

@@ -24,7 +24,7 @@ function DescriptionCard({ detail }) {
             {detail.height / 10} m
           </p>
           <div className="type-flex">
-            <h3>{detail.types.length > 1 ? "types:" : "type:"}</h3>
+            <h3>{detail.types?.length > 1 ? "types:" : "type:"}</h3>
             <div className="pokemon-type">
               {detail.types &&
                 detail.types.map((types) => <p>{types.type.name}</p>)}
