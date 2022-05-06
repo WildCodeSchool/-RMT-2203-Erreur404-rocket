@@ -30,7 +30,6 @@ function Pokedex() {
 
   return (
     <div>
-      {/* ---------- Section resume Pokedex and picture ---------- */}
       <section className="box-pokedex">
         <div className="pokedex-text">
           <h1>Créer le plus féroce des Pokedex</h1>
@@ -43,20 +42,14 @@ function Pokedex() {
           <img src={pokedexImg} alt="pokedex" />
         </div>
       </section>
-
-      {/* ---------- Section separateur ---------- */}
-
       <div className="separation">
         <hr className="separateur" />
         <img className="rocketball" src={teamRocketball} alt="rocketball" />
         <hr className="separateur" />
       </div>
-
-      {/* ---------- Section search-bar ---------- */}
       <section className="searchbar">
         <Searchbar searchValue={searchValue} setSearchValue={setSearchValue} />
       </section>
-      {/* ---------- Section Listing Pokedex ---------- */}
       <div className="Pokedex-wrapper">
         <ul>
           {pokedex &&
