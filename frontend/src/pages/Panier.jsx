@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import CartCard from "@components/CartCard";
-import Séparateur from "@components/Séparateur";
+import Separateur from "@components/Separateur";
 import pokemonSelected from "../data/pokemonSelected";
 
 import PokemonInJail from "../assets/cage-pkm.png";
@@ -22,7 +22,7 @@ function Panier() {
         <h1 className="cart">La cage pour le Boss</h1>
         <div />
       </div>
-      <Séparateur />
+      <Separateur />
       <section className="section01">
         <img className="pokemoninjail" src={PokemonInJail} alt="Prison" />
         <div className="paniertext">
@@ -35,7 +35,7 @@ function Panier() {
           </p>
         </div>
       </section>
-      <Séparateur />
+      <Separateur />
       <section className="section02">
         <div className="Pokedex-wrapper">
           <ul>

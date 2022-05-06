@@ -1,7 +1,7 @@
 import React from "react";
 import teamRocketball from "../assets/team-rocket ball.png";
 
-function Séparateur() {
+function Separateur() {
   return (
     <div className="separation">
       <hr className="separateur" />
@@ -11,4 +11,4 @@ function Séparateur() {
   );
 }
 
-export default Séparateur;
+export default Separateur;
