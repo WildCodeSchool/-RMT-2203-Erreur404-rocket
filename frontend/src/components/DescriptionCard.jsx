@@ -59,18 +59,15 @@ function DescriptionCard({ detail, pokedexnum, ajouterAuPanier }) {
           src={teamRocketball}
           alt="rocketball"
         />
-        {monPanier && monPanier.length === 6 ? (
-          <button type="button">
-            Votre Panier est Déja plein
-            <br /> retirer en un avant de pouvoir en rajouter de nouveaux
-          </button>
-        ) : (
-          <button type="button" onClick={() => ajouterAuPanier(pokedexnum - 1)}>
-            Attrape ce Pokémon
-            <br />
-            et ajoute le au panier
-          </button>
-        )}
+        <button
+          type="button"
+          onClick={() => ajouterAuPanier(pokedexnum - 1)}
+          disabled={monPanier.length === 6}
+        >
+          Attrape ce Pokémon
+          <br />
+          et ajoute le au panier
+        </button>
       </div>
 
       <ul className="abilities">
