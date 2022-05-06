@@ -56,7 +56,9 @@ function Pokedex() {
           {pokedex &&
             pokedex
               .filter((pokemon) => pokemon.name.includes(searchValue))
-              .map((pokemon) => <PokemonCard pokemon={pokemon} />)}
+              .map((pokemon) => (
+                <PokemonCard key={pokemon.pokedexnum} pokemon={pokemon} />
+              ))}
         </ul>
       </div>
     </div>
