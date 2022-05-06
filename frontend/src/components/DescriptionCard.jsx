@@ -1,12 +1,13 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useContext } from "react";
 
+import ExportContext from "../contexts/PanierContext";
 import ProgressBar from "./ProgressBar";
 import teamRocketball from "../assets/team-rocket ball.png";
 
 import "../styles/PokemonDescription.css";
 
-function DescriptionCard({ detail }) {
+function DescriptionCard({ detail, pokedexnum, ajouterAuPanier }) {
+  const { monPanier } = useContext(ExportContext.PanierContext);
   return (
     <div className="pkm-data">
       <div className="main-data">
@@ -58,11 +59,18 @@ function DescriptionCard({ detail }) {
           src={teamRocketball}
           alt="rocketball"
         />
-        <NavLink to="/panier">
-          Attrape ce Pokémon
-          <br />
-          et ajoute le au panier
-        </NavLink>
+        {monPanier && monPanier.length === 6 ? (
+          <button type="button">
+            Votre Panier est Déja plein
+            <br /> retirer en un avant de pouvoir en rajouter de nouveaux
+          </button>
+        ) : (
+          <button type="button" onClick={() => ajouterAuPanier(pokedexnum - 1)}>
+            Attrape ce Pokémon
+            <br />
+            et ajoute le au panier
+          </button>
+        )}
       </div>
 
       <ul className="abilities">

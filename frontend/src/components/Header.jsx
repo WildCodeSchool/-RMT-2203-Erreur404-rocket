@@ -7,6 +7,9 @@ import "../styles/Header.css";
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
+  const handleShowMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   return (
     <div className={`header ${showMenu ? "show-nav" : "hide-nav"}`}>
@@ -25,7 +28,7 @@ function Header() {
         <span className="bar" />
       </button>
       <div className="menuWrapper">
-        <NavBar />
+        <NavBar handleShowMenu={handleShowMenu} />
       </div>
     </div>
   );

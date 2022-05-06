@@ -1,19 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function NavBar({ showMenu, setShowMenu }) {
+function NavBar({ handleShowMenu }) {
   return (
     <ul>
-      <NavLink to="/" onClick={() => setShowMenu(!showMenu)}>
+      <NavLink to="/" onClick={() => handleShowMenu()}>
         <li>Accueil</li>
       </NavLink>
-      <NavLink to="/pokedex" onClick={() => setShowMenu(!showMenu)}>
+      <NavLink to="/pokedex" onClick={() => handleShowMenu()}>
         <li>Pokedex</li>
       </NavLink>
-      <NavLink to="/contact" onClick={() => setShowMenu(!showMenu)}>
+      <NavLink to="/contact" onClick={() => handleShowMenu()}>
         <li>Contact</li>
       </NavLink>
-      <NavLink to="/panier" onClick={() => setShowMenu(!showMenu)}>
+      <NavLink to="/panier" onClick={() => handleShowMenu()}>
         <li>Panier</li>
       </NavLink>
       <div className="img1-responsive-menu " />
