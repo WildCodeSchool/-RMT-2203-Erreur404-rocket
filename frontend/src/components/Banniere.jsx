@@ -1,4 +1,4 @@
-function Bannière() {
+function Banniere() {
   return <div className="banneer-container" />;
 }
-export default Bannière;
+export default Banniere;

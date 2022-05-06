@@ -27,7 +27,6 @@ function Pokedex() {
         )
       );
   }, []);
-
   return (
     <div>
       <section className="box-pokedex">
@@ -42,13 +41,10 @@ function Pokedex() {
           <img src={pokedexImg} alt="pokedex" />
         </div>
       </section>
-
       <Séparateur />
-
       <section className="searchbar">
         <Searchbar searchValue={searchValue} setSearchValue={setSearchValue} />
       </section>
-
       <div className="Pokedex-wrapper">
         <ul>
           {pokedex &&

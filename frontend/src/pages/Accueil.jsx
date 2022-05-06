@@ -11,12 +11,12 @@ import miaoussAlone from "../assets/miaouss-alone.png";
 import jamesRocket from "../assets/james-rocket.jpg";
 
 import "../styles/Accueil.css";
-import Bannière from "../components/Bannière";
+import Banniere from "../components/Banniere";
 
 function Acceuil() {
   return (
     <>
-      <Bannière />
+      <Banniere />
       <div className="maincontainer">
         <div className="section1">
           <div className="rejoins-nous">
