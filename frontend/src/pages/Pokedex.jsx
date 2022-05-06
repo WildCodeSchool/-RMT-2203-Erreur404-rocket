@@ -1,10 +1,10 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-import PokemonCard from "@components/PokemonCard";
-import Searchbar from "@components/Searchbar";
+import PokemonCard from "../components/PokemonCard";
+import Searchbar from "../components/Searchbar";
+import Séparateur from "../components/Séparateur";
 
-import teamRocketball from "../assets/team-rocket ball.png";
 import pokedexImg from "../assets/pokedex.png";
 
 import "../styles/Pokedex.css";
@@ -27,7 +27,6 @@ function Pokedex() {
         )
       );
   }, []);
-
   return (
     <div>
       <section className="box-pokedex">
@@ -42,11 +41,7 @@ function Pokedex() {
           <img src={pokedexImg} alt="pokedex" />
         </div>
       </section>
-      <div className="separation">
-        <hr className="separateur" />
-        <img className="rocketball" src={teamRocketball} alt="rocketball" />
-        <hr className="separateur" />
-      </div>
+      <Séparateur />
       <section className="searchbar">
         <Searchbar searchValue={searchValue} setSearchValue={setSearchValue} />
       </section>

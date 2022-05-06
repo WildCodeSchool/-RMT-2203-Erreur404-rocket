@@ -2,7 +2,8 @@ import React from "react";
 
 import { Slide, Fade } from "react-awesome-reveal";
 
-import teamRocketball from "../assets/team-rocket-ball.png";
+import Séparateur from "./Séparateur";
+
 import imagerocket from "../assets/rocket-recrutment.jpg";
 import rocketmobile from "../assets/giovanni-rocket3.png";
 
@@ -35,11 +36,7 @@ function ContactComponents() {
             <br /> Enfin... s&apos;il prends ta demande au sérieux.
           </p>
         </Fade>
-        <div className="separation">
-          <hr className="separateur" />
-          <img className="rocketball" src={teamRocketball} alt="rocketball" />
-          <hr className="separateur" />
-        </div>
+        <Séparateur />
       </div>
     </div>
   );

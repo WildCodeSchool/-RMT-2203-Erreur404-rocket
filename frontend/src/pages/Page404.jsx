@@ -15,7 +15,7 @@ function Page404() {
   useEffect(() => {
     setTimeout(() => {
       navigate("/");
-    }, 5000);
+    }, 15000);
   }, []);
   return (
     <div className="maincontainer">
