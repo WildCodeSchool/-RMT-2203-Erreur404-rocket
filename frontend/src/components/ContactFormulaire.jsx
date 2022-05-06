@@ -14,7 +14,7 @@ function ContactFormulaire() {
         <img className="pika" src={pika} alt="pikachu" />
         <div className="card">
           <form method="POST" name="contactform" className="contactForm">
-            <h1 className="h1contact">N&apos;attends plus</h1>
+            <h1 className="h1contact">N&aposattends plus</h1>
 
             <input
               type="text"

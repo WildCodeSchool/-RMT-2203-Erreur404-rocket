@@ -18,7 +18,9 @@ function Header() {
       <button
         type="button"
         className="navbar-burger"
-        onClick={() => setShowMenu(!showMenu)}
+        onClick={() => {
+          setShowMenu(!showMenu);
+        }}
       >
         <span className="bar" />
       </button>
