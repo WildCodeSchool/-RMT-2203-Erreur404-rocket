@@ -26,8 +26,9 @@ function Carte() {
             <Mapper />
           </div>
           <div className="map-pokemon-container">
-            {monPanier.length > 0 &&
-              monPanier.map((pokemon) => <MapCard pokemon={pokemon} />)}
+            {monPanier.map((pokemon) => (
+              <MapCard pokemon={pokemon} />
+            ))}
           </div>
         </div>
       </div>

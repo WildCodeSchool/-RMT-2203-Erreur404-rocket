@@ -40,14 +40,13 @@ function Panier() {
       <section className="section02">
         <div className="Pokedex-wrapper">
           <ul>
-            {monPanier.length > 0 &&
-              monPanier.map((pokemon) => (
-                <CartCard
-                  key={pokemon.pokedexnum}
-                  pokemon={pokemon}
-                  deletePokemon={deletePokemon}
-                />
-              ))}
+            {monPanier.map((pokemon) => (
+              <CartCard
+                key={pokemon.pokedexnum}
+                pokemon={pokemon}
+                deletePokemon={deletePokemon}
+              />
+            ))}
           </ul>
         </div>
       </section>
