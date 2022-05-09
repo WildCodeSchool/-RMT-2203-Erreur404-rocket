@@ -22,14 +22,32 @@ function PanierProvider({ children }) {
         )
       );
   }, []);
-
+  const ajouterAuPanier = (index, detail) => {
+    const pokemon = { ...pokedex[index], ...detail };
+    if (
+      !monPanier.some(
+        (pkmn) => pkmn.pokedexnum === parseFloat(pokedex[index].pokedexnum, 1)
+      ) ||
+      !monPanier.length === 6
+    ) {
+      const newPanier = [...monPanier];
+      newPanier.push(pokemon);
+      setMonPanier(newPanier);
+    }
+  };
+  const deletePokemon = (pokedexnum) => {
+    const poke = monPanier.filter(
+      (pokemon) => pokemon.pokedexnum !== pokedexnum
+    );
+    setMonPanier(poke);
+  };
   return (
     <PanierContext.Provider
       value={{
         monPanier,
-        setMonPanier,
+        ajouterAuPanier,
         pokedex,
-        setPokedex,
+        deletePokemon,
       }}
     >
       {children}

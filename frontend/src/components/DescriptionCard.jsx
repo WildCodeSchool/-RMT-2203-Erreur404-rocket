@@ -1,4 +1,5 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
+import axios from "axios";
 
 import ExportContext from "../contexts/PanierContext";
 import ProgressBar from "./ProgressBar";
@@ -6,8 +7,17 @@ import teamRocketball from "../assets/team-rocket ball.png";
 
 import "../styles/PokemonDescription.css";
 
-function DescriptionCard({ detail, pokedexnum, ajouterAuPanier }) {
-  const { monPanier } = useContext(ExportContext.PanierContext);
+function DescriptionCard({ pokedexnum }) {
+  const { monPanier, ajouterAuPanier } = useContext(
+    ExportContext.PanierContext
+  );
+  const [detail, setDetail] = useState({});
+
+  useEffect(() => {
+    axios
+      .get(`https://pokeapi.co/api/v2/pokemon/${pokedexnum}`)
+      .then((res) => setDetail(res.data));
+  }, []);
   return (
     <div className="pkm-data">
       <div className="main-data">
@@ -33,7 +43,6 @@ function DescriptionCard({ detail, pokedexnum, ajouterAuPanier }) {
           </div>
         </div>
       </div>
-
       <div className="box-pkm-picture-basic-stats">
         <img
           className="pkm-picture"
@@ -44,7 +53,7 @@ function DescriptionCard({ detail, pokedexnum, ajouterAuPanier }) {
         <div className="pkm-basic-stats">
           {detail.stats &&
             detail.stats.map((el) => (
-              <ul className="stats-name">
+              <ul className="stats-name" key={el.stat.name}>
                 {el.stat.name}
                 <li className="stats-value">
                   <ProgressBar progress={el.base_stat} />
@@ -61,20 +70,25 @@ function DescriptionCard({ detail, pokedexnum, ajouterAuPanier }) {
         />
         <button
           type="button"
-          onClick={() => ajouterAuPanier(pokedexnum - 1)}
-          disabled={monPanier.length === 6}
+          onClick={() => ajouterAuPanier(pokedexnum - 1, detail)}
+          disabled={
+            monPanier.some(
+              (pokemon) => pokemon.pokedexnum === parseFloat(pokedexnum)
+            ) || monPanier.length === 6
+          }
         >
           Attrape ce Pokémon
           <br />
           et ajoute le au panier
         </button>
       </div>
-
       <ul className="abilities">
         <h2>Capacités spéciales :</h2>
         {detail.abilities &&
           detail.abilities.map((el) => (
-            <li className="abilities-name">{el.ability.name}</li>
+            <li className="abilities-name" key={el.ability.name}>
+              {el.ability.name}
+            </li>
           ))}
       </ul>
     </div>

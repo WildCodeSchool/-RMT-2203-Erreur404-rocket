@@ -3,20 +3,15 @@ import { NavLink } from "react-router-dom";
 
 import CartCard from "@components/CartCard";
 import Separateur from "@components/Separateur";
+import ExportContext from "../contexts/PanierContext";
 
 import PokemonInJail from "../assets/cage-pkm.png";
 import Gps from "../assets/gps.png";
 
 import "../styles/Panier.css";
-import ExportContext from "../contexts/PanierContext";
 
 function Panier() {
   const { monPanier } = useContext(ExportContext.PanierContext);
-  const { setMonPanier } = useContext(ExportContext.PanierContext);
-  const deletePokemon = (pokedexnum) => {
-    const poke = monPanier.filter((el) => el.pokedexnum !== pokedexnum);
-    setMonPanier(poke);
-  };
   return (
     <div>
       <div className="panier-title">
@@ -41,11 +36,7 @@ function Panier() {
         <div className="Pokedex-wrapper">
           <ul>
             {monPanier.map((pokemon) => (
-              <CartCard
-                key={pokemon.pokedexnum}
-                pokemon={pokemon}
-                deletePokemon={deletePokemon}
-              />
+              <CartCard key={pokemon.pokedexnum} pokemon={pokemon} />
             ))}
           </ul>
         </div>
