@@ -67,8 +67,7 @@ a {
 }
 /*  FIN SEPARATEUR RECCURENT */
 .section1,
-.section2
-{
+.section2 {
   padding-top: 5rem;
   display: flex;
   justify-content: space-around;
@@ -84,19 +83,14 @@ a {
   color: var(--BackgroundColor);
   text-align: center;
   margin: 0 0 2rem 0rem;
-
 }
 .paragraph-content p {
   padding: 1rem;
-
 }
 
-
-
-.bold{
-  font-weight: bold ;
+.bold {
+  font-weight: bold;
 }
-
 
 .section1 h1,
 .section2 h2,
@@ -116,7 +110,7 @@ a {
   position: relative;
   background-color: var(--MainColor);
   font-family: var(--text-font);
-    border: var(--MainColor);
+  border: var(--MainColor);
   color: var(--color3);
   text-align: center;
   font-size: 0, 1rem;
@@ -139,9 +133,8 @@ a {
 .buttonContact:hover,
 .buttonPokedex:hover {
   background-color: var(--color2);
-    transform: scale(1.2);
+  transform: scale(1.2);
   transition: ease-out 0.5s;
-  
 }
 
 .buttonContact::after,
@@ -227,8 +220,6 @@ a {
     width: 40px;
   }
 
- 
-
   .buttonContact,
   .buttonPokedex {
     display: flex;
@@ -238,15 +229,12 @@ a {
     width: 180px;
     padding: 1rem 2rem 1rem 2rem;
   }
- 
 
   .section1,
   .section2,
   .section3 {
     flex-direction: column;
   }
-
-  
 
   .section1 h1,
   .section2 h,
@@ -298,11 +286,9 @@ a {
   .description-jessie,
   .description-miaouss,
   .description-james {
-    
     width: 100%;
     padding: 0;
   }
-  
 }
 
 @media screen and (max-width: 767px) {
@@ -315,8 +301,6 @@ a {
     font-size: 2rem;
     margin-left: 0;
   }
-
-
 
   .css-2qfv45 {
     width: 100%;
@@ -334,9 +318,9 @@ a {
   .lateam {
     width: 200px;
   }
-  .description-jessie ,
-  .description-miaouss ,
-  .description-james  {
+  .description-jessie,
+  .description-miaouss,
+  .description-james {
     margin-top: 0;
     color: var(--color3);
     font-size: 1rem;

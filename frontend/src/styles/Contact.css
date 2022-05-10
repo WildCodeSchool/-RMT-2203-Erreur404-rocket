@@ -177,11 +177,11 @@ a {
 .input-contact {
   font-size: 1rem;
   padding: 3%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .message-contact {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .label-contact {
@@ -201,7 +201,7 @@ a {
 .select-contact {
   background-color: var(--color3);
   padding: 1.5%;
-  border-radius:var(--border-radius)
+  border-radius: var(--border-radius);
 }
 
 .contactForm {
@@ -226,7 +226,8 @@ a {
 }
 
 .contactForm input,
-textarea, button {
+textarea,
+button {
   height: 100%;
   width: 100%;
   padding-left: 3px;
@@ -234,7 +235,6 @@ textarea, button {
   border-radius: 1px;
   border-style: none;
 }
-
 
 .contactForm button:hover {
   background-color: rgb(97, 2, 2);
@@ -245,7 +245,6 @@ textarea, button {
 textarea {
   background-color: rgb(240, 240, 240);
 }
-
 
 .h1contact {
   display: flex;
