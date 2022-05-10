@@ -83,9 +83,31 @@
   margin: auto;
   display: flex;
   justify-content: center;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   align-items: center;
   font-size: 32px;
+  background-color: var(--MainColor);
+  font-family: var(--text-font);
+  border: var(--MainColor);
+  color: var(--color3);
+  text-align: center;
+  font-size: 0, 1rem;
+  padding: 1rem 2rem;
+  transition: all 0.5s;
+  margin-top: 1rem;
+}
+.btn-panier:after{
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btn-panier:hover{
+  background-color: var(--color2);
+  transform: scale(1.2);
+  transition: ease-out 0.5s;
 }
 .btn-panier:disabled,
 .btn-panier:disabled img {

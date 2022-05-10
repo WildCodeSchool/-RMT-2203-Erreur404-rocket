@@ -181,7 +181,7 @@ a {
 
 @media screen and (max-width: 768px) {
   .pkm-picture {
-    width: 75%;
+    width:50%;
   }
 }
 
