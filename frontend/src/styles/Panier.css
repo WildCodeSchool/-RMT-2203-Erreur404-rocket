@@ -1,6 +1,7 @@
 .cart {
   text-align: center;
   font-size: 64px;
+  color: var(--color2);
 }
 
 .section01 {
@@ -9,8 +10,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 10px dashed var(--color3);
-  border-radius: 13px;
 }
 .pokemoninjail {
   width: 50%;
@@ -80,7 +79,23 @@
   aspect-ratio: 1/1;
   width: 200px;
 }
+.btn-panier {
+  margin: auto;
+display: flex;
+justify-content: center;
+padding: 2rem 1rem;
+align-items: center;
+font-size: 32px;
+}
+.btn-panier:disabled, .btn-panier:disabled img{
+  cursor: not-allowed;
+  display: none
+}
 
+.btn-panier img {
+  margin: 1rem;
+  width: 40px;
+}
 .btn-delete {
   align-items: center;
   justify-content: center;

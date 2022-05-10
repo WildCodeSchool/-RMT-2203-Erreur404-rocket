@@ -1,32 +1,18 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useState, useContext } from "react";
 
 import PokemonCard from "../components/PokemonCard";
 import Searchbar from "../components/Searchbar";
 import Séparateur from "../components/Séparateur";
 
+import ExportContext from "../contexts/PanierContext";
 import pokedexImg from "../assets/pokedex.png";
 
 import "../styles/Pokedex.css";
-import ListEncounterAreaByPokemon from "../data/ListEncouterAreaByPokemon";
 
 function Pokedex() {
   const [searchValue, setSearchValue] = useState("");
-  const [pokedex, setPokedex] = useState([]);
+  const { pokedex } = useContext(ExportContext.PanierContext);
 
-  useEffect(() => {
-    axios
-      .get("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=151")
-      .then((res) =>
-        setPokedex(
-          res.data.results.map((pokemon, index) => ({
-            ...pokemon,
-            pokedexnum: index + 1,
-            area: ListEncounterAreaByPokemon[index],
-          }))
-        )
-      );
-  }, []);
   return (
     <div>
       <section className="box-pokedex">

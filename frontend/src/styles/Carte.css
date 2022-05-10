@@ -78,6 +78,7 @@ width:100%;
 }
 .title-map{
   font-size: 5rem;
+  color: var(--color2);
 }
 @media screen and (max-width: 1025px){
   .img-flex{

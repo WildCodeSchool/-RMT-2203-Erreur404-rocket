@@ -1,26 +1,18 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
 import { useParams, NavLink } from "react-router-dom";
 
-import PokemonDetail from "@components/PokemonDetail";
+import PokemonDetail from "../components/PokemonDetail";
 import DescriptionCard from "../components/DescriptionCard";
 
 import "../styles/PokemonDescription.css";
 
 function PokemonDescription() {
   const { pokedexnum } = useParams();
-  const [detail, setDetail] = useState({});
 
-  useEffect(() => {
-    axios
-      .get(`https://pokeapi.co/api/v2/pokemon/${pokedexnum}`)
-
-      .then((res) => setDetail(res.data));
-  }, []);
   return (
     <div>
-      <DescriptionCard detail={detail} />
-      <PokemonDetail />
+      <DescriptionCard pokedexnum={pokedexnum} />
+      <PokemonDetail pokedexnum={pokedexnum} />
       <div className="box-btn-home-panier">
         <NavLink to="/pokedex" className="btn-pkm-home">
           Retourner au Pokedex

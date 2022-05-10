@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 
-function CartCard({ pokemon, deletePokemon }) {
+import ExportContext from "../contexts/PanierContext";
+
+function CartCard({ pokemon }) {
+  const { deletePokemon } = useContext(ExportContext.PanierContext);
   return (
     <div className="pokemoncart-wrapper">
       <div className="pokemoncart-name">{pokemon.name}</div>

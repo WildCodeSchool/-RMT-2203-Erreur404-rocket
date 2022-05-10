@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Mapper from "@components/Mapper";
 
+import ExportContext from "../contexts/PanierContext";
 import Séparateur from "../components/Séparateur";
-import pokemonSelected from "../data/pokemonSelected";
 import MapCard from "../components/MapCard";
+
 import jessie from "../assets/jessie-alone2.png";
 import james from "../assets/james-alone.png";
 import Banniere from "../components/Banniere";
@@ -11,6 +12,7 @@ import Banniere from "../components/Banniere";
 import "../styles/Carte.css";
 
 function Carte() {
+  const { monPanier } = useContext(ExportContext.PanierContext);
   return (
     <div>
       <Banniere />
@@ -24,7 +26,7 @@ function Carte() {
             <Mapper />
           </div>
           <div className="map-pokemon-container">
-            {pokemonSelected.map((pokemon) => (
+            {monPanier.map((pokemon) => (
               <MapCard pokemon={pokemon} />
             ))}
           </div>

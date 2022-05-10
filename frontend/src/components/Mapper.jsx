@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import ImageMapper from "react-img-mapper";
 
 import areaSelected from "../data/areaSelected";
-import pokemonSelected from "../data/pokemonSelected";
+import ExportContext from "../contexts/PanierContext";
 
 import "../styles/Carte.css";
 
 function Mapper() {
+  const { monPanier } = useContext(ExportContext.PanierContext);
   const areaTemp = areaSelected.filter((area) => {
     let result = false;
-    pokemonSelected.forEach((pokemon) => {
-      if (pokemon.area.includes(area.id)) result = true;
-    });
+    if (monPanier.length > 0) {
+      monPanier.forEach((pokemon) => {
+        if (pokemon.area.includes(area.id)) result = true;
+      });
+    }
     return result;
   });
 
