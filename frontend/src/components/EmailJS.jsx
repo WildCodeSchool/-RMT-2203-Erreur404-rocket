@@ -1,10 +1,10 @@
 import React from 'react';
- 
+
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 import { Bounce } from 'react-awesome-reveal';
- 
+
 import * as yup from 'yup';
 import emailjs from '@emailjs/browser';
 
@@ -62,9 +62,8 @@ const EmailJS = () => {
 
   return (
     <Bounce>
-    <div>
-      <form className="contactForm" onSubmit={handleSubmit(onSubmit)}>
-      <h1 className="h1contact">N&apos;attends plus</h1>
+      <div>
+        <form className="contactForm" onSubmit={handleSubmit(onSubmit)}>
           <label htmlFor="name" className="label-contact">
             Nom et Prenom :
           </label>
@@ -136,7 +135,7 @@ const EmailJS = () => {
             <option value="Irisia">Irisia</option>
             <option value="Autre">Autre</option>
           </select>
-          
+
 
           <label htmlFor="message" className="label-contact">
             {' '}
@@ -156,8 +155,8 @@ const EmailJS = () => {
           <button className="button-contact" type="Submit" value="Envoyer">
             <p className="pcontact">Je contacte la team rocket ! </p>
           </button>
-      </form>
-    </div>
+        </form>
+      </div>
     </Bounce>
   );
 };
