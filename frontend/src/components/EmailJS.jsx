@@ -135,8 +135,6 @@ const EmailJS = () => {
             <option value="Irisia">Irisia</option>
             <option value="Autre">Autre</option>
           </select>
-
-
           <label htmlFor="message" className="label-contact">
             {' '}
             Message :
@@ -151,7 +149,6 @@ const EmailJS = () => {
             {...register('message')}
           ></textarea>
           {errors.message && <p id="c-yup">{errors.message.message}</p>}
-
           <button className="button-contact" type="Submit" value="Envoyer">
             <p className="pcontact">Je contacte la team rocket ! </p>
           </button>
