@@ -62,26 +62,23 @@ function DescriptionCard({ pokedexnum }) {
             ))}
         </div>
       </div>
-      <div className="btn-ajouter-au-panier">
+      <button
+        className="btn-panier"
+        type="button"
+        onClick={() => ajouterAuPanier(pokedexnum - 1, detail)}
+        disabled={
+          monPanier.some(
+            (pokemon) => pokemon.pokedexnum === parseFloat(pokedexnum)
+          ) || monPanier.length === 6
+        }
+      >
         <img
           className="rocketball-descriptioncard"
           src={teamRocketball}
           alt="rocketball"
         />
-        <button
-          type="button"
-          onClick={() => ajouterAuPanier(pokedexnum - 1, detail)}
-          disabled={
-            monPanier.some(
-              (pokemon) => pokemon.pokedexnum === parseFloat(pokedexnum)
-            ) || monPanier.length === 6
-          }
-        >
-          Attrape ce Pokémon
-          <br />
-          et ajoute le au panier
-        </button>
-      </div>
+        ajoute au panier
+      </button>
       <ul className="abilities">
         <h2>Capacités spéciales :</h2>
         {detail.abilities &&

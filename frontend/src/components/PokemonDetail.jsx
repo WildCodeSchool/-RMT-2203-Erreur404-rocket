@@ -1,8 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
+
+import ExportContext from "../contexts/PanierContext";
+
 import "../styles/PokemonDescription.css";
 
 function PokemonDetail({ pokedexnum }) {
+  const { pokedex } = useContext(ExportContext.PanierContext);
   const [moredetail, setMoredetail] = useState({});
   useEffect(() => {
     axios
@@ -35,22 +39,27 @@ function PokemonDetail({ pokedexnum }) {
           <p> {moredetail.habitat?.name}</p>
         </div>
       </div>
-      <div className="pkm-evolution">
-        {moredetail.evolves_from_species?.name != null && (
-          <div className="img-pkm-evolution">
-            <h2>Evolution de : </h2>
-            <span className="img-pkm-evolution-name">
-              {moredetail.evolves_from_species.name}
-            </span>
-            <img
-              src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${
-                moredetail.id - 1
-              }.png`}
-              alt={`pokemon number ${moredetail.id}`}
-            />
-          </div>
-        )}
-      </div>
+      {moredetail.evolves_from_species &&
+      pokedex[pokedexnum - 2].name === moredetail.evolves_from_species.name ? (
+        <div className="pkm-evolution">
+          {moredetail.evolves_from_species?.name != null && (
+            <div className="img-pkm-evolution">
+              <h2>Evolution de : </h2>
+              <span className="img-pkm-evolution-name">
+                {moredetail.evolves_from_species.name}
+              </span>
+              <img
+                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${
+                  moredetail.id - 1
+                }.png`}
+                alt={`pokemon number ${moredetail.id}`}
+              />
+            </div>
+          )}
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }
