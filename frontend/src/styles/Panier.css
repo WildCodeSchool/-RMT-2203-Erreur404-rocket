@@ -87,9 +87,6 @@ padding: 2rem 1rem;
 align-items: center;
 font-size: 32px;
 }
-.btn-panier:hover{
-
-}
 .btn-panier:disabled, .btn-panier:disabled img{
   cursor: not-allowed;
   display: none
