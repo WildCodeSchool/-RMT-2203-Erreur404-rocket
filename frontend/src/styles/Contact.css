@@ -86,6 +86,7 @@ a {
 .comeus {
   color: var(--color2);
   font-size: 3.5rem;
+  text-align: center;
 }
 
 .whyrejoinus {
@@ -289,6 +290,7 @@ textarea {
 }
 .row2 {
   width: 45%;
+  padding-left: 1rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   /* SEPARATEUR RECCURENT */
@@ -408,6 +410,7 @@ textarea {
   .row2 {
     flex-direction: column;
     margin: auto;
+    padding: 0;
   }
 
   .contactForm {
@@ -449,6 +452,7 @@ textarea {
   }
   .row2 {
     width: 100%;
+    padding: 0;
   }
   .card {
     width: 100%;
@@ -538,6 +542,7 @@ textarea {
   .row2 {
     flex-direction: column;
     margin: auto;
+    padding: 0;
   }
   .contactForm {
     margin-top: 6%;
