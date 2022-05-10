@@ -113,7 +113,6 @@ const EmailJS = () => {
             <option value="Rencontrer Giovanni">Rencontrer Giovanni</option>
             <option value="Autre">Autre</option>
           </select>
-
           <label htmlFor="Ville" className="label-contact">
             Votre ville :
           </label>
@@ -136,7 +135,6 @@ const EmailJS = () => {
             <option value="Autre">Autre</option>
           </select>
           <label htmlFor="message" className="label-contact">
-            {' '}
             Message :
           </label>
           <textarea
