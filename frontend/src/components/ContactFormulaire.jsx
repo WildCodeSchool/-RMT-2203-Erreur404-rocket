@@ -9,8 +9,8 @@ function ContactFormulaire() {
       <div className="formcontact1">
         <img className="pikamobile" src={pika} alt="pikachu" />
         <img className="pika" src={pika} alt="pikachu" />
-       <EmailJS />
-        </div>
+        <EmailJS />
+      </div>
   );
 }
 

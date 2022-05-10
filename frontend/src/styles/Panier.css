@@ -1,0 +1,217 @@
+.cart {
+  text-align: center;
+  font-size: 64px;
+  color: var(--color2);
+}
+
+.section01 {
+  padding: 2rem 0 2rem 0;
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pokemoninjail {
+  width: 50%;
+}
+.paniertext {
+  padding: 0.5rem 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  background-color: var(--color3);
+  border-radius: 13px;
+  box-shadow: var(--box-shadow);
+}
+
+.paniertext h1 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  font-size: 64px;
+}
+
+.paniertext p {
+  text-align: center;
+}
+
+.panier-title {
+  width: 50%;
+  margin: 2rem auto 2rem auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cart-icon {
+  background-color: var(--color3);
+  border-radius: 13px;
+  box-shadow: var(--box-shadow);
+}
+
+.section02 {
+  margin: auto;
+  width: 90%;
+}
+
+.pokemoncart-wrapper {
+  background-color: lightgrey;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.pokemoncart-name {
+  font-family: var(--title-font);
+  text-transform: uppercase;
+  padding: 1rem 0 1rem 0;
+  color: var(--color3);
+  font-weight: bold;
+  font-size: 24px;
+  background-color: var(--color2);
+}
+
+.pokemoncart-picture {
+  aspect-ratio: 1/1;
+  width: 200px;
+}
+.btn-panier {
+  margin: auto;
+display: flex;
+justify-content: center;
+padding: 2rem 1rem;
+align-items: center;
+font-size: 32px;
+}
+.btn-panier:disabled, .btn-panier:disabled img{
+  cursor: not-allowed;
+  display: none
+}
+
+.btn-panier img {
+  margin: 1rem;
+  width: 40px;
+}
+.btn-delete {
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 1rem auto;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  display: flex;
+  background-color: var(--color2);
+  cursor: pointer;
+  text-align: center;
+  color: var(--color3);
+  border-radius: 13px;
+}
+
+.btn-delete:hover {
+  background-color: var(--MainColor);
+}
+
+.btn-cart {
+  width: 250px;
+  align-items: center;
+  justify-content: space-between;
+  float: right;
+  margin: 5rem 2rem 5rem 0;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  display: flex;
+  background-color: var(--color2);
+  cursor: pointer;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-family: var(--text-font);
+  border-radius: 15px 50px 30px;
+}
+.btn-cart:hover {
+  background-color: var(--MainColor);
+}
+
+/* PANIER RESPONSIVE TABLET */
+
+@media screen and (max-width: 1024px) {
+  .panier-title {
+    flex-direction: column;
+  }
+  .cart {
+    font-size: 32px;
+    margin-bottom: 2rem;
+  }
+  .cart-icon {
+    width: 50px;
+  }
+
+  .separation {
+    margin: 5rem 0 5rem 0;
+    justify-content: center;
+  }
+  .separateur {
+    margin: 0;
+    height: 4px;
+    width: 25%;
+  }
+  .rocketball {
+    width: 40px;
+    margin: 0 1rem;
+  }
+
+  .pokemoninjail {
+    width: 80%;
+    margin-bottom: 5rem;
+  }
+
+  .section01 {
+    flex-direction: column;
+  }
+
+  .paniertext {
+    width: 80%;
+  }
+
+  .paniertext h1 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    font-size: 32px;
+  }
+
+  .paniertext p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .pokemoncart-wrapper {
+    width: 40%;
+  }
+
+  .pokemoncart-name {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+
+  .pokemoncart-picture {
+    width: 100px;
+  }
+
+  .btn-delete {
+    padding: 0 2rem 0 2rem;
+    font-size: 16px;
+    border-radius: 0px;
+    max-width: 100px;
+  }
+
+  .btn-cart {
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem auto 2rem auto;
+    float: none;
+    border-radius: 0;
+  }
+}
