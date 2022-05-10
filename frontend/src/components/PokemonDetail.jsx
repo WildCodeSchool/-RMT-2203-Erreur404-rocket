@@ -40,6 +40,7 @@ function PokemonDetail({ pokedexnum }) {
         </div>
       </div>
       {moredetail.evolves_from_species &&
+      pokedex[pokedexnum - 2] &&
       pokedex[pokedexnum - 2].name === moredetail.evolves_from_species.name ? (
         <div className="pkm-evolution">
           {moredetail.evolves_from_species?.name != null && (
