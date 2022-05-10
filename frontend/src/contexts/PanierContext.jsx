@@ -26,7 +26,7 @@ function PanierProvider({ children }) {
     const pokemon = { ...pokedex[index], ...detail };
     if (
       !monPanier.some(
-        (pkmn) => pkmn.pokedexnum === parseFloat(pokedex[index].pokedexnum, 1)
+        (pkmn) => pkmn.pokedexnum === parseFloat(pokedex[index].pokedexnum)
       ) ||
       !monPanier.length === 6
     ) {

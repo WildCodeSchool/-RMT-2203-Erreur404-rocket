@@ -1,6 +1,7 @@
 .cart {
   text-align: center;
   font-size: 64px;
+  color: var(--color2);
 }
 
 .section01 {
@@ -9,8 +10,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 10px dashed var(--color3);
-  border-radius: 13px;
 }
 .pokemoninjail {
   width: 50%;

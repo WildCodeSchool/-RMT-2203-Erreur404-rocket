@@ -16,7 +16,6 @@ function Panier() {
     <div>
       <div className="panier-title">
         <h1 className="cart">La cage pour le Boss</h1>
-        <div />
       </div>
       <Separateur />
       <section className="section01">
