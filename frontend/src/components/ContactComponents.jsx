@@ -18,7 +18,7 @@ function ContactComponents() {
       </div>
       <div className="divcontact">
         <Slide triggerOnce>
-          <h1 className="comeus">Rejoignez nous !</h1>
+          <h2 className="comeus">Rejoignez nous !</h2>
         </Slide>
         <Fade delay={1000}>
           <p className="whyrejoinus">
