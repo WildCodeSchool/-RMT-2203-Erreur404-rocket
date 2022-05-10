@@ -62,16 +62,16 @@ a {
     display: none;
   }
 }
-.pokemon-type{
+.pokemon-type {
   display: flex;
   justify-content: space-between;
   width: inherit;
 }
-.type-flex{
+.type-flex {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 .main-data {
   display: flex;
@@ -105,8 +105,8 @@ a {
 }
 
 .main-data-detail > h2,
-.main-data-detail > p ,
-.type-flex{
+.main-data-detail > p,
+.type-flex {
   display: flex;
   justify-content: center;
   text-align: center;

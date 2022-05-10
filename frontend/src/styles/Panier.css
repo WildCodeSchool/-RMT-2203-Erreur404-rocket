@@ -81,15 +81,16 @@
 }
 .btn-panier {
   margin: auto;
-display: flex;
-justify-content: center;
-padding: 2rem 1rem;
-align-items: center;
-font-size: 32px;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  align-items: center;
+  font-size: 32px;
 }
-.btn-panier:disabled, .btn-panier:disabled img{
+.btn-panier:disabled,
+.btn-panier:disabled img {
   cursor: not-allowed;
-  display: none
+  display: none;
 }
 
 .btn-panier img {
