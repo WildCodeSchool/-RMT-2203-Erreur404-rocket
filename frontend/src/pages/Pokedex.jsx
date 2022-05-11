@@ -1,34 +1,20 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useState, useContext } from "react";
 
-import PokemonCard from "@components/PokemonCard";
-import Searchbar from "@components/Searchbar";
+import PokemonCard from "../components/PokemonCard";
+import Searchbar from "../components/Searchbar";
+import Séparateur from "../components/Séparateur";
 
-import teamRocketball from "../assets/team-rocket ball.png";
+import ExportContext from "../contexts/PanierContext";
 import pokedexImg from "../assets/pokedex.png";
 
 import "../styles/Pokedex.css";
 
 function Pokedex() {
   const [searchValue, setSearchValue] = useState("");
-  const [pokedex, setPokedex] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=151")
-      .then((res) =>
-        setPokedex(
-          res.data.results.map((pokemon, index) => ({
-            ...pokemon,
-            pokedexnum: index + 1,
-          }))
-        )
-      );
-  }, []);
+  const { pokedex } = useContext(ExportContext.PanierContext);
 
   return (
     <div>
-      {/* ---------- Section resume Pokedex and picture ---------- */}
       <section className="box-pokedex">
         <div className="pokedex-text">
           <h1>Créer le plus féroce des Pokedex</h1>
@@ -41,26 +27,18 @@ function Pokedex() {
           <img src={pokedexImg} alt="pokedex" />
         </div>
       </section>
-
-      {/* ---------- Section separateur ---------- */}
-
-      <div className="separation">
-        <hr className="separateur" />
-        <img className="rocketball" src={teamRocketball} alt="rocketball" />
-        <hr className="separateur" />
-      </div>
-
-      {/* ---------- Section search-bar ---------- */}
+      <Séparateur />
       <section className="searchbar">
         <Searchbar searchValue={searchValue} setSearchValue={setSearchValue} />
       </section>
-      {/* ---------- Section Listing Pokedex ---------- */}
       <div className="Pokedex-wrapper">
         <ul>
           {pokedex &&
             pokedex
               .filter((pokemon) => pokemon.name.includes(searchValue))
-              .map((pokemon) => <PokemonCard pokemon={pokemon} />)}
+              .map((pokemon) => (
+                <PokemonCard key={pokemon.pokedexnum} pokemon={pokemon} />
+              ))}
         </ul>
       </div>
     </div>

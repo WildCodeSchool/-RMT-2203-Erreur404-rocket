@@ -31,9 +31,6 @@ h5 {
   font-family: var(--title-font);
   font-weight: 500; /* ou 700 en bold */
 }
-h1 {
-  color: var(--color2);
-}
 p {
   font-family: var(--text-font);
   font-weight: 500; /* 700 possible en bold */
@@ -69,7 +66,6 @@ a {
   width: 60px;
 }
 /*  FIN SEPARATEUR RECCURENT */
-
 .section1,
 .section2 {
   padding-top: 5rem;
@@ -78,20 +74,28 @@ a {
   align-items: center;
 }
 
-.section1 p,
-.section2 p {
-  padding: 1rem 1rem;
+.paragraph-content {
+  width: 100%;
+  padding: 1rem 0rem;
   background-color: var(--color3);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   color: var(--BackgroundColor);
   text-align: center;
-  margin: 0rem 0 3rem 1rem;
+  margin: 0 0 2rem 0rem;
+}
+.paragraph-content p {
+  padding: 1rem;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .section1 h1,
-.section2 h1,
-.section3 h1 {
+.section2 h2,
+.section3 h2 {
+  color: var(--color2);
   padding: 1rem 1rem;
   text-align: center;
   margin: 1rem 0 1rem 1rem;
@@ -106,12 +110,11 @@ a {
   position: relative;
   background-color: var(--MainColor);
   font-family: var(--text-font);
-  border-radius: 18px;
   border: var(--MainColor);
   color: var(--color3);
   text-align: center;
   font-size: 0, 1rem;
-  padding: 20px;
+  padding: 1rem 2rem;
   width: 300px;
   transition: all 0.5s;
   cursor: pointer;
@@ -130,7 +133,8 @@ a {
 .buttonContact:hover,
 .buttonPokedex:hover {
   background-color: var(--color2);
-  padding-right: 25px;
+  transform: scale(1.2);
+  transition: ease-out 0.5s;
 }
 
 .buttonContact::after,
@@ -193,15 +197,6 @@ a {
   border-radius: 100%;
 }
 
-.description-wrapper p {
-  background-color: var(--color3);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  color: var(--BackgroundColor);
-  text-align: center;
-  padding: 1rem 1rem;
-  margin-bottom: 4rem;
-}
 .description-jessie,
 .description-miaouss,
 .description-james {
@@ -241,21 +236,9 @@ a {
     flex-direction: column;
   }
 
-  .section1 p,
-  .section2 p {
-    padding: 1rem 1rem;
-    background-color: var(--color3);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    color: var(--BackgroundColor);
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 2rem 0 3rem 1rem;
-  }
-
   .section1 h1,
-  .section2 h1,
-  .section3 h1 {
+  .section2 h,
+  .section3 h2 {
     font-size: 3rem;
   }
 
@@ -303,20 +286,8 @@ a {
   .description-jessie,
   .description-miaouss,
   .description-james {
-    background: linear-gradient(to right, #a21a10, #0f1b1e);
-    width: 100vw;
+    width: 100%;
     padding: 0;
-  }
-  .description-jessie p,
-  .description-miaouss p,
-  .description-james p {
-    background: var(--BackgroundColor);
-    border-radius: 0px;
-    background-origin: padding-box, border-box;
-    background-repeat: no-repeat;
-    color: var(--color3);
-    box-shadow: none;
-    font-size: 1.2rem;
   }
 }
 
@@ -325,19 +296,10 @@ a {
     margin: 5rem 0 5rem 0;
   }
   .section1 h1,
-  .section2 h1,
-  .section3 h1 {
+  .section2 h2,
+  .section3 h2 {
     font-size: 2rem;
     margin-left: 0;
-  }
-
-  .section1 p,
-  .section2 p,
-  .section3 p {
-    color: var(--BackgroundColor);
-    font-size: 1rem;
-    padding: 2rem 0 3rem 1rem;
-    margin: 1rem 0 2rem 0;
   }
 
   .css-2qfv45 {
@@ -356,9 +318,9 @@ a {
   .lateam {
     width: 200px;
   }
-  .description-jessie p,
-  .description-miaouss p,
-  .description-james p {
+  .description-jessie,
+  .description-miaouss,
+  .description-james {
     margin-top: 0;
     color: var(--color3);
     font-size: 1rem;
