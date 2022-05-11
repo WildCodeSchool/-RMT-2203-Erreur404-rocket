@@ -17,7 +17,9 @@ function Carte() {
     <div>
       <Banniere />
       <div className="mapContainer">
-        <h1 className="title-map">Carte</h1>
+        <h1 id="title-map" className="title-map">
+          Carte
+        </h1>
         <Séparateur />
         <div className="flex-map-container">
           <div className="img-flex">
