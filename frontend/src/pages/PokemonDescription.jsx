@@ -1,5 +1,6 @@
 import React from "react";
-import { useParams, NavLink } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { HashLink as NavLink } from "react-router-hash-link";
 
 import PokemonDetail from "../components/PokemonDetail";
 import DescriptionCard from "../components/DescriptionCard";
@@ -14,7 +15,7 @@ function PokemonDescription() {
       <DescriptionCard pokedexnum={pokedexnum} />
       <PokemonDetail pokedexnum={pokedexnum} />
       <div className="box-btn-home-panier">
-        <NavLink to="/pokedex" className="btn-pkm-home">
+        <NavLink to="/pokedex#searchbar" className="btn-pkm-home">
           Retourner au Pokedex
         </NavLink>
       </div>

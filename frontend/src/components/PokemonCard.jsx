@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { HashLink as NavLink } from "react-router-hash-link";
 
 function PokemonCard({ pokemon }) {
   return (
@@ -12,7 +12,7 @@ function PokemonCard({ pokemon }) {
         alt={pokemon.name}
       />
       <NavLink
-        to={`/pokemon-description/${pokemon.pokedexnum}/${pokemon.name}`}
+        to={`/pokemon-description/${pokemon.pokedexnum}/${pokemon.name}#header`}
         className="button-detail"
       >
         Plus d&apos;infos <span>{pokemon.name}</span>

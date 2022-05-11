@@ -22,6 +22,7 @@
     "react-img-mapper": "^1.4.0",
     "react-player": "^2.10.0",
     "react-router-dom": "^6.3.0",
+    "react-router-hash-link": "^2.4.3",
     "template-fullstack": "file:..",
     "yup": "^0.32.11"
   },

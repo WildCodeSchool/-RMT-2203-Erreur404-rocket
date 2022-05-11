@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { HashLink as NavLink } from "react-router-hash-link";
 
 import CartCard from "@components/CartCard";
 import Separateur from "@components/Separateur";
@@ -40,7 +40,7 @@ function Panier() {
           </ul>
         </div>
       </section>
-      <NavLink className="btn-cart" to="/carte">
+      <NavLink className="btn-cart" to="/carte#title-map">
         Localiser ma prise
         <img className="paper-plane" src={Gps} alt="send" width="40px" />
       </NavLink>

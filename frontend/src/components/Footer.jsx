@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { HashLink as NavLink } from "react-router-hash-link";
 
 import logo from "../assets/logo3bis.png";
 import facebook from "../assets/facebook.png";
@@ -20,16 +20,16 @@ function Footer() {
 
         <div className="footer-navigation">
           <ul>
-            <NavLink to="/">
+            <NavLink to="/#header">
               <li>Accueil</li>
             </NavLink>
-            <NavLink to="/pokedex">
+            <NavLink to="/pokedex#header">
               <li>Pokedex</li>
             </NavLink>
-            <NavLink to="/contact">
+            <NavLink to="/contact#header">
               <li>Contact</li>
             </NavLink>
-            <NavLink to="/panier">
+            <NavLink to="/panier#header">
               <li>Panier</li>
             </NavLink>
           </ul>
