@@ -1,5 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+
+import { HashLink as NavLink } from "react-router-hash-link";
 
 import { Slide } from "react-awesome-reveal";
 
@@ -34,7 +35,7 @@ function Acceuil() {
                 <p className="bold">Rejoins-nous ou ce sera la guerre !</p>
               </div>
 
-              <NavLink className="buttonContact" to="/Contact">
+              <NavLink className="buttonContact" to="/Contact#header">
                 Rejoins-nous !
               </NavLink>
             </Slide>
@@ -62,7 +63,7 @@ function Acceuil() {
                   <span className="bold">Giovanni.</span>
                 </p>
               </div>
-              <NavLink className="buttonPokedex" to="/Pokedex">
+              <NavLink className="buttonPokedex" to="/Pokedex#header">
                 Découvre notre Pokédex !
               </NavLink>
             </Slide>

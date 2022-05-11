@@ -28,7 +28,7 @@ function Pokedex() {
         </div>
       </section>
       <Séparateur />
-      <section className="searchbar">
+      <section id="searchbar" className="searchbar">
         <Searchbar searchValue={searchValue} setSearchValue={setSearchValue} />
       </section>
       <div className="Pokedex-wrapper">
